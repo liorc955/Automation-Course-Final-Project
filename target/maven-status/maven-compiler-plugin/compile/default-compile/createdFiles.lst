@@ -1,0 +1,16 @@
+pageObjects\saucedemo\PrimaryHeaderPage.class
+utilities\Base.class
+utilities\ManagePages.class
+pageObjects\saucedemo\InventoryPage.class
+extensions\UIActions.class
+workflows\WebFlows.class
+pageObjects\saucedemo\CartPage.class
+pageObjects\saucedemo\LeftMenuPage.class
+utilities\CommonOps.class
+utilities\Listeners.class
+extensions\Verifications.class
+pageObjects\saucedemo\InventoryItemPage.class
+utilities\MonteScreenRecorder.class
+utilities\ManageDDT.class
+pageObjects\saucedemo\LoginPage.class
+pageObjects\saucedemo\SecondaryHeaderPage.class

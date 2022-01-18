@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Enviroment>
+    <!-- Timeout Config -->
+    <TimeOut>5</TimeOut>
+    <SikuliTimeOut>20</SikuliTimeOut>
+    <!-- Web Config -->
+    <PlatformName>web</PlatformName>
+    <BrowserName>chrome</BrowserName>
+    <url>https://www.saucedemo.com/</url>
+    <ImageRepo>\ImageRepository\</ImageRepo>
+
+    <!-- Data Driven Testing -->
+    <DDTFile>./DDTFiles/items.csv</DDTFile>
+</Enviroment>

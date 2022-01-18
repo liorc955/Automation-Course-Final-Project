@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 43.954 s <<< FAILURE! - in TestSuite
+test06_verify_visualization_primary_header_logo(sanity.SauceDemoWeb)  Time elapsed: 21.073 s  <<< FAILURE!
+java.lang.AssertionError: 
+Error comparing image file FindFailed: C:\Users\liorc\IdeaProjects\AutomationCourse_FinalProject\ImageRepository\test06_verify_visualization_primary_header_logo.png: (207x51) in R[0,0 1920x1080]@S(0)
+  Line 2226, in file Region.java
+
+	at sanity.SauceDemoWeb.test06_verify_visualization_primary_header_logo(SauceDemoWeb.java:59)
+
