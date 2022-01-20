@@ -47,7 +47,6 @@ public class Verifications extends CommonOps {
         Pattern imagePattern = new Pattern(System.getProperty("user.dir") + getData("ImageRepo") + expectedImageName + ".png");
         try {
             screen.wait(imagePattern,Long.parseLong(getData("SikuliTimeOut")));
-            screen.find(imagePattern);
         } catch (FindFailed findFailed) {
             fail("Error comparing image file " + findFailed);
         }
