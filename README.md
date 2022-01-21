@@ -49,9 +49,9 @@ You will need to install allure to see the tests report:
 
 https://docs.qameta.io/allure/
     
-## Deployment
+## Running Tests
 
-To deploy this project run
+To run tests, run the following command
 
 ```bash
   mvn test clean
