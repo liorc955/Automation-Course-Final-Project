@@ -21,7 +21,7 @@ In this project, I build a generic automation framework that supports various pl
 
 ## Tech Stack
 
-For this project, I used the following maven package:
+For this project, I used the following maven packages:
 - [TestNG](https://testng.org/doc/) - Testing framework for Java
 - [Selenium Java](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java) - Selenium automates browsers
 - [WebDriverManager](https://github.com/bonigarcia/webdrivermanager) - Open-Source Java library that carries out the management of the drivers required by Selenium WebDriver
