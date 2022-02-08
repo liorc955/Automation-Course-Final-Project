@@ -5,6 +5,7 @@ package sanity;
 import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Description;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
@@ -16,6 +17,11 @@ import java.lang.reflect.Method;
 
 @Listeners(utilities.Listeners.class)
 public class SauceDemoWeb extends CommonOps {
+
+    @BeforeMethod
+    public void before(){
+        WebFlows.login("standard_user","secret_sauce");
+    }
 
 
     @Test(description = "Test01 - Verify Title")
