@@ -87,7 +87,7 @@ public class Listeners extends CommonOps implements ITestListener{
             image = bos.toByteArray();
         } catch (Exception e) { }
 
-        // if decoding is not necessary just return image
+
         return image != null ? image : null;
     }
 }
