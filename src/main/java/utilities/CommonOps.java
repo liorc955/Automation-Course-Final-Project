@@ -91,7 +91,6 @@ public class CommonOps extends Base {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        WebFlows.login("standard_user","secret_sauce");
     }
 
     @AfterClass
