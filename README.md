@@ -10,7 +10,7 @@ In this project, I build a generic automation framework that supports various pl
 
  -  Web (Selenium) - Done
  -  Grapich Element Support (Sikuli) - Done
- -  Mobile (Appium)
+ -  Mobile (Appium) - Done
  -  REST API 
  -  Desktop App 
  -  Angular JS 

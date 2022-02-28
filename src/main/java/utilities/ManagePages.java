@@ -1,18 +1,23 @@
 package utilities;
 
 import org.openqa.selenium.support.PageFactory;
-
+import pageObjects.mortgage.MainPage;
+import pageObjects.saucedemo.*;
 
 
 public class ManagePages extends Base {
 
     public static void initSauceDemo(){
-        sauceDemoLogin = PageFactory.initElements(driver,pageObjects.saucedemo.LoginPage.class);
-        sauceDemoInventory = PageFactory.initElements(driver,pageObjects.saucedemo.InventoryPage.class);
-        sauceDemoLeftMenu = PageFactory.initElements(driver,pageObjects.saucedemo.LeftMenuPage.class);
-        sauceDemoSecondaryHeader = PageFactory.initElements(driver,pageObjects.saucedemo.SecondaryHeaderPage.class);
-        sauceDemoPrimaryHeader = PageFactory.initElements(driver,pageObjects.saucedemo.PrimaryHeaderPage.class);
-        sauceDemoCartPage = PageFactory.initElements(driver,pageObjects.saucedemo.CartPage.class);
-        sauceDemoInventoryItem = PageFactory.initElements(driver,pageObjects.saucedemo.InventoryItemPage.class);
+        sauceDemoLogin = PageFactory.initElements(driver, LoginPage.class);
+        sauceDemoInventory = PageFactory.initElements(driver, InventoryPage.class);
+        sauceDemoLeftMenu = PageFactory.initElements(driver, LeftMenuPage.class);
+        sauceDemoSecondaryHeader = PageFactory.initElements(driver, SecondaryHeaderPage.class);
+        sauceDemoPrimaryHeader = PageFactory.initElements(driver, PrimaryHeaderPage.class);
+        sauceDemoCartPage = PageFactory.initElements(driver, CartPage.class);
+        sauceDemoInventoryItem = PageFactory.initElements(driver, InventoryItemPage.class);
+    }
+
+    public static void initMortgage(){
+        mortgageMain = new MainPage(mobileDriver);
     }
 }

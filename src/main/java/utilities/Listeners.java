@@ -68,7 +68,9 @@ public class Listeners extends CommonOps implements ITestListener{
 
     @Attachment(value = "Screenshot", type = "image/png")
     public byte[] AllureScreenshot() {
+        if (!(getData("PlatformName").equalsIgnoreCase("mobile")))
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        else return ((TakesScreenshot) mobileDriver).getScreenshotAs(OutputType.BYTES);
     }
 
     @Attachment(value = "Sikuli Compare Image", type = "image/png")

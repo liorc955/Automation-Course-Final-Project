@@ -1,11 +1,17 @@
 package utilities;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.annotations.AfterClass;
@@ -20,6 +26,8 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class CommonOps extends Base {
@@ -59,6 +67,23 @@ public class CommonOps extends Base {
         ManagePages.initSauceDemo();
     }
 
+    public static void initMobile(){
+        dc.setCapability(MobileCapabilityType.UDID, getData("UDID"));
+        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, getData("AppPackage"));
+        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, getData("AppActivity"));
+        try {
+            mobileDriver = new AppiumDriver(new URL(getData("AppiumServer")), dc);
+        } catch (Exception e) {
+            System.out.println("Can not connect to Appium server");
+            System.out.println(e);
+        }
+        ManagePages.initMortgage();
+        touchAction = new TouchAction(mobileDriver);
+        long timeOut = Long.parseLong(getData("TimeOut"));
+        mobileDriver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+        wait = new WebDriverWait(mobileDriver,timeOut);
+    }
+
     public static WebDriver initChromeDriver(){
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -77,15 +102,22 @@ public class CommonOps extends Base {
     }
 
     @BeforeClass
-    public void setup() {
+    public void beforeClass() {
         if (getData("PlatformName").equalsIgnoreCase("web")) initBrowser(getData("BrowserName"));
-      //  else if (getData("PlatformName").equalsIgnoreCase("mobile")) initMobile();
+        else if (getData("PlatformName").equalsIgnoreCase("mobile")) initMobile();
         else throw new RuntimeException("Invalid platform name");
         softAssert = new SoftAssert();
         screen = new Screen();
     }
+
+    @AfterClass
+    public void afterClass(){
+        if (!getData("PlatformName").equalsIgnoreCase("mobile")) driver.close();
+        else mobileDriver.close();
+    }
+
     @BeforeMethod
-    public void beforeTest(Method method){
+    public void beforeMethod(Method method){
         try {
             MonteScreenRecorder.startRecord(method.getName());
         } catch (Exception e) {
@@ -93,13 +125,9 @@ public class CommonOps extends Base {
         }
     }
 
-    @AfterClass
-    public void teardown(){
-        driver.quit();
+    @AfterMethod
+    public void afterMethod(){
+        if (getData("PlatformName").equalsIgnoreCase("web")) driver.get(getData("url"));
     }
 
-    @AfterMethod
-    public void afterTest(){
-        driver.get(getData("url"));
-    }
 }

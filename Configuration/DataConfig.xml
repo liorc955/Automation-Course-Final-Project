@@ -3,11 +3,20 @@
     <!-- Timeout Config -->
     <TimeOut>5</TimeOut>
     <SikuliTimeOut>20</SikuliTimeOut>
+
     <!-- Web Config -->
-    <PlatformName>web</PlatformName>
+    <PlatformName>mobile</PlatformName>
+
+    <!-- Web Config -->
     <BrowserName>chrome</BrowserName>
     <url>https://www.saucedemo.com/</url>
     <ImageRepo>\ImageRepository\</ImageRepo>
+
+    <!-- Mobile Config -->
+    <AppiumServer>http://127.0.0.1:4723/wd/hub</AppiumServer>
+    <AppPackage>com.shivgadhia.android.ukMortgageCalc</AppPackage>
+    <AppActivity>.MainActivity</AppActivity>
+    <UDID>R5CR12HDQ5R</UDID>
 
     <!-- Data Driven Testing -->
     <DDTFile>./DDTFiles/items.csv</DDTFile>
