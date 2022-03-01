@@ -1,17 +1,19 @@
 package utilities;
 
+import org.json.simple.JSONObject;
 import org.testng.annotations.DataProvider;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ManageDDT extends CommonOps {
 
 
-    @DataProvider(name = "data-provider-items")
+    @DataProvider(name = "data-provider")
     public static Object[][] getDataObject(){
         return getDataFromCSV(getData("DDTFile"));
     }
@@ -41,5 +43,16 @@ public class ManageDDT extends CommonOps {
         }
         return objects;
     }
+
+    /*public static ArrayList<JSONObject> getListOfBooks(){
+        List<String> stringsLines = readCSV(getData());
+        ArrayList<JSONObject> books = new ArrayList<>();
+        for (int i=0; i<stringsLines.size(); i++){
+            JSONObject js = new JSONObject();
+            js.put("isbn",stringsLines.get(i));
+            books.add(js);
+        }
+        return books;
+    }*/
 
 }

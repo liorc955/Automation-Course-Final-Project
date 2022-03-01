@@ -2,6 +2,10 @@ package utilities;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -12,17 +16,23 @@ import pageObjects.mortgage.MainPage;
 import pageObjects.saucedemo.*;
 
 public class Base {
-    //General
+    // General
     protected static WebDriverWait wait;
     protected static Actions actions;
     protected static SoftAssert softAssert;
     protected static Screen screen;
     protected static DesiredCapabilities dc = new DesiredCapabilities();
 
-    //Web
+    // Rest API
+    protected static RequestSpecification httpRequest;
+    protected static Response response;
+    protected static JSONObject params = new JSONObject();
+    protected static JsonPath jp;
+
+    // Web
     protected static WebDriver driver;
 
-    //Mobile
+    // Mobile
     protected static AppiumDriver mobileDriver;
     protected static TouchAction touchAction;
 

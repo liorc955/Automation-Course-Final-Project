@@ -66,7 +66,7 @@ public class SauceDemoWeb extends CommonOps {
     }
 
 
-    @Test(description = "Test07 - Verify Item Exists In Cart", dataProvider = "data-provider-items", dataProviderClass = ManageDDT.class)
+    @Test(description = "Test07 - Verify Item Exists In Cart", dataProvider = "data-provider", dataProviderClass = ManageDDT.class)
     @Description("This test verifies the existence of an item in a cart using DDT")
     public void test07_verify_product_exists_inCart(String itemName){
         WebFlows.addItem(itemName);

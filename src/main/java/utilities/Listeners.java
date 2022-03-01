@@ -22,26 +22,30 @@ public class Listeners extends CommonOps implements ITestListener{
     @Override
     public void onTestSuccess(ITestResult result) {
         System.out.println("---------Test:" + result.getName() + " Finished------");
-        try {
-            MonteScreenRecorder.stopRecord();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (!getData("PlatformName").equalsIgnoreCase("api")) {
+            try {
+                MonteScreenRecorder.stopRecord();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            File file = new File("./test-recordings/" + result.getName() + ".avi");
+            if (file.delete()){ System.out.println("File deleted successfully"); } else { System.out.println("Failed to delete the file"); }
         }
-        File file = new File("./test-recordings/" + result.getName() + ".avi");
-        if (file.delete()){ System.out.println("File deleted successfully"); } else { System.out.println("Failed to delete the file"); }
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         System.out.println("---------Test:" + result.getName() + " Failed------");
-        AllureScreenshot();
-        if (result.getName().contains("visualization")){
-            attachSikuliCompareImage(System.getProperty("user.dir") + getData("ImageRepo") + result.getName() + ".png");
-        }
-        try {
-            MonteScreenRecorder.stopRecord();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (!getData("PlatformName").equalsIgnoreCase("api")) {
+            AllureScreenshot();
+            if (result.getName().contains("visualization")){
+                attachSikuliCompareImage(System.getProperty("user.dir") + getData("ImageRepo") + result.getName() + ".png");
+            }
+            try {
+                MonteScreenRecorder.stopRecord();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 

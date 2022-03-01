@@ -2,16 +2,16 @@ package utilities;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.restassured.RestAssured;
+import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.annotations.AfterClass;
@@ -20,13 +20,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
 import org.w3c.dom.Document;
-import workflows.WebFlows;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.lang.reflect.Method;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
@@ -62,7 +59,7 @@ public class CommonOps extends Base {
         driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver,timeOut);
         driver.manage().window().maximize();
-        driver.get(getData("url"));
+        driver.get(getData("urlWeb"));
         actions = new Actions(driver);
         ManagePages.initSauceDemo();
     }
@@ -101,10 +98,16 @@ public class CommonOps extends Base {
         return driver;
     }
 
+    public static void initAPI(){
+        RestAssured.baseURI = getData("urlAPI");
+        httpRequest = RestAssured.given().auth().preemptive().basic(getData("UserName"),getData("Password"));
+    }
+
     @BeforeClass
     public void beforeClass() {
         if (getData("PlatformName").equalsIgnoreCase("web")) initBrowser(getData("BrowserName"));
         else if (getData("PlatformName").equalsIgnoreCase("mobile")) initMobile();
+        else if (getData("PlatformName").equalsIgnoreCase("api")) initAPI();
         else throw new RuntimeException("Invalid platform name");
         softAssert = new SoftAssert();
         screen = new Screen();
@@ -112,22 +115,28 @@ public class CommonOps extends Base {
 
     @AfterClass
     public void afterClass(){
-        if (!getData("PlatformName").equalsIgnoreCase("mobile")) driver.close();
-        else mobileDriver.close();
+        if(!getData("PlatformName").equalsIgnoreCase("api")){
+            if (!getData("PlatformName").equalsIgnoreCase("mobile")) driver.close();
+            else mobileDriver.close();
+        }
     }
 
     @BeforeMethod
     public void beforeMethod(Method method){
-        try {
-            MonteScreenRecorder.startRecord(method.getName());
-        } catch (Exception e) {
-            e.printStackTrace();
+        if(getData("PlatformName").equalsIgnoreCase("api")){
+            params = new JSONObject();
+        } else {
+            try {
+                MonteScreenRecorder.startRecord(method.getName());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
     @AfterMethod
     public void afterMethod(){
-        if (getData("PlatformName").equalsIgnoreCase("web")) driver.get(getData("url"));
+        if (getData("PlatformName").equalsIgnoreCase("web")) driver.get(getData("urlWeb"));
     }
 
 }

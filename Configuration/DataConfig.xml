@@ -4,12 +4,16 @@
     <TimeOut>5</TimeOut>
     <SikuliTimeOut>20</SikuliTimeOut>
 
-    <!-- Web Config -->
-    <PlatformName>mobile</PlatformName>
+    <!-- Authorization Config -->
+    <UserName>liorco</UserName>
+    <Password>Aa123456!</Password>
+
+    <!-- General Config -->
+    <PlatformName>api</PlatformName>
 
     <!-- Web Config -->
     <BrowserName>chrome</BrowserName>
-    <url>https://www.saucedemo.com/</url>
+    <urlWeb>https://www.saucedemo.com/</urlWeb>
     <ImageRepo>\ImageRepository\</ImageRepo>
 
     <!-- Mobile Config -->
@@ -18,6 +22,12 @@
     <AppActivity>.MainActivity</AppActivity>
     <UDID>R5CR12HDQ5R</UDID>
 
+    <!-- API Config -->
+    <urlAPI>https://bookstore.toolsqa.com/</urlAPI>
+    <UserId>666c5b69-3c65-48ba-be43-fb47ae1e4809</UserId>
+
+
     <!-- Data Driven Testing -->
-    <DDTFile>./DDTFiles/items.csv</DDTFile>
+    <DDTFile>./DDTFiles/books.csv</DDTFile>
+
 </Enviroment>
