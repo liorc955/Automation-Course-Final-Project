@@ -12,9 +12,9 @@ In this project, I build a generic automation framework that supports various pl
  -  Grapich Element Support (Sikuli) - Done
  -  Mobile (Appium) - Done
  -  REST API - Done
- -  Desktop App - Done
+ -  Desktop App 
  -  Angular JS 
- -  Electron Apps 
+ -  Electron Apps - Done
  -  Database Integration
  -  CI/CD Integration
 
