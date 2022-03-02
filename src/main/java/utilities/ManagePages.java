@@ -24,4 +24,8 @@ public class ManagePages extends Base {
     public static void initTodo(){
         todoMain = PageFactory.initElements(driver, pageObjects.todolist.MainPage.class);
     }
+
+    public static void initCalculator(){
+        calcMain = PageFactory.initElements(driver, pageObjects.calculator.MainPage.class);
+    }
 }

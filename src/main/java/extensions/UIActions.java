@@ -72,4 +72,9 @@ public class UIActions extends CommonOps {
         return -1;
     }
 
+    @Step("Get Text Of Element")
+    public static String getElementText(WebElement element){
+        return element.getText();
+    }
+
 }

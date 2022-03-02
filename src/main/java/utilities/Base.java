@@ -2,6 +2,7 @@ package utilities;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.windows.WindowsDriver;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -51,4 +52,7 @@ public class Base {
 
     // Electron Page Objects
     protected static pageObjects.todolist.MainPage todoMain;
+
+    // Desktop Page Objects
+    protected static pageObjects.calculator.MainPage calcMain;
 }

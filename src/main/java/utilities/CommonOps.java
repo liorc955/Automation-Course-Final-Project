@@ -4,6 +4,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.windows.WindowsDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import org.json.simple.JSONObject;
@@ -27,6 +28,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
@@ -64,6 +66,7 @@ public class CommonOps extends Base {
         driver.manage().window().maximize();
         driver.get(getData("urlWeb"));
         ManagePages.initSauceDemo();
+        actions = new Actions(driver);
     }
 
     public static void initMobile(){
@@ -116,6 +119,21 @@ public class CommonOps extends Base {
         long timeOut = Long.parseLong(getData("TimeOut"));
         driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver,timeOut);
+        actions = new Actions(driver);
+    }
+
+    public static void initDesktop(){
+        dc.setCapability("app",getData("DesktopApp"));
+        try {
+            driver = new WindowsDriver(new URL(getData("WinAppDriverServer")),dc);
+        } catch (Exception e) {
+            System.out.println("Can not connect to Appium server");
+            System.out.println(e);
+        }
+        long timeOut = Long.parseLong(getData("TimeOut"));
+        driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+        wait = new WebDriverWait(driver,timeOut);
+        ManagePages.initCalculator();
     }
 
     @BeforeClass
@@ -124,10 +142,10 @@ public class CommonOps extends Base {
         else if (getData("PlatformName").equalsIgnoreCase("mobile")) initMobile();
         else if (getData("PlatformName").equalsIgnoreCase("api")) initAPI();
         else if (getData("PlatformName").equalsIgnoreCase("electron")) initElectron();
+        else if (getData("PlatformName").equalsIgnoreCase("desktop")) initDesktop();
         else throw new RuntimeException("Invalid platform name");
         softAssert = new SoftAssert();
         screen = new Screen();
-        actions = new Actions(driver);
     }
 
     @AfterClass
