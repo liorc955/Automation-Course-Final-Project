@@ -16,6 +16,10 @@ import org.testng.asserts.SoftAssert;
 import pageObjects.mortgage.MainPage;
 import pageObjects.saucedemo.*;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 public class Base {
     // General
     protected static WebDriverWait wait;
@@ -37,6 +41,10 @@ public class Base {
     protected static AppiumDriver mobileDriver;
     protected static TouchAction touchAction;
 
+    // Database
+    protected static ResultSet rs;
+    protected static Connection con;
+    protected static Statement stmt;
 
     // Web Page Objects
     protected static LoginPage sauceDemoLogin;

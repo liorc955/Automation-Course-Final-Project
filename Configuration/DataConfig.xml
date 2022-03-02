@@ -9,7 +9,7 @@
     <Password>Aa123456!</Password>
 
     <!-- General Config -->
-    <PlatformName>desktop</PlatformName>
+    <PlatformName>web</PlatformName>
 
     <!-- Web Config -->
     <BrowserName>chrome</BrowserName>
@@ -33,6 +33,11 @@
     <!-- Desktop Config -->
     <DesktopApp>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</DesktopApp>
     <WinAppDriverServer>http://127.0.0.1:4723/</WinAppDriverServer>
+
+    <!-- Database Config -->
+    <dbUrl>jdbc:postgresql://localhost:5432/</dbUrl>
+    <dbUsername>postgres</dbUsername>
+    <dbPassword>17263547tyty</dbPassword>
 
     <!-- Data Driven Testing -->
     <DDTFile>./DDTFiles/books.csv</DDTFile>

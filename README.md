@@ -14,7 +14,7 @@ In this project, I build a generic automation framework that supports various pl
  -  REST API - Done
  -  Desktop App - Done
  -  Electron Apps - Done
- -  Database Integration
+ -  Database Integration - Done
  -  CI/CD Integration
 
 

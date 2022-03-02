@@ -28,8 +28,9 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.lang.reflect.Method;
-import java.net.MalformedURLException;
 import java.net.URL;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.concurrent.TimeUnit;
 
 public class CommonOps extends Base {
@@ -136,6 +137,7 @@ public class CommonOps extends Base {
         ManagePages.initCalculator();
     }
 
+
     @BeforeClass
     public void beforeClass() {
         if (getData("PlatformName").equalsIgnoreCase("web")) initBrowser(getData("BrowserName"));
@@ -146,6 +148,7 @@ public class CommonOps extends Base {
         else throw new RuntimeException("Invalid platform name");
         softAssert = new SoftAssert();
         screen = new Screen();
+        ManageDB.openConnection(getData("dbUrl"),getData("dbUsername"),getData("dbPassword"));
     }
 
     @AfterClass
@@ -154,6 +157,7 @@ public class CommonOps extends Base {
             if (!getData("PlatformName").equalsIgnoreCase("mobile")) driver.close();
             else mobileDriver.close();
         }
+        ManageDB.closeConnection();
     }
 
     @BeforeMethod
