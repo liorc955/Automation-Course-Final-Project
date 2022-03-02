@@ -36,6 +36,7 @@ public class Base {
     protected static AppiumDriver mobileDriver;
     protected static TouchAction touchAction;
 
+
     // Web Page Objects
     protected static LoginPage sauceDemoLogin;
     protected static InventoryPage sauceDemoInventory;
@@ -46,5 +47,8 @@ public class Base {
     protected static InventoryItemPage sauceDemoInventoryItem;
 
     // Mobile Page Objects
-    protected static MainPage mortgageMain;
+    protected static pageObjects.mortgage.MainPage mortgageMain;
+
+    // Electron Page Objects
+    protected static pageObjects.todolist.MainPage todoMain;
 }

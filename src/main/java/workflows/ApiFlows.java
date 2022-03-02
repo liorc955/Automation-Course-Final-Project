@@ -39,5 +39,10 @@ public class ApiFlows extends CommonOps {
         ApiActions.delete(String.format("BookStore/v1/Books?UserId=%s",getData("UserId")));
     }
 
+    @Step("Business Flow: Get Status Code")
+    public static int getStatusCode(){
+        return response.getStatusCode();
+    }
+
 
 }

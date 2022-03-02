@@ -9,7 +9,7 @@
     <Password>Aa123456!</Password>
 
     <!-- General Config -->
-    <PlatformName>api</PlatformName>
+    <PlatformName>electron</PlatformName>
 
     <!-- Web Config -->
     <BrowserName>chrome</BrowserName>
@@ -26,6 +26,9 @@
     <urlAPI>https://bookstore.toolsqa.com/</urlAPI>
     <UserId>666c5b69-3c65-48ba-be43-fb47ae1e4809</UserId>
 
+    <!-- Electron Config -->
+    <ElectronDriverPath>./Drivers/electrondriver.exe</ElectronDriverPath>
+    <ElectronAppPath>C:/Users/liorc/AppData/Local/Programs/todolist/Todolist.exe</ElectronAppPath>
 
     <!-- Data Driven Testing -->
     <DDTFile>./DDTFiles/books.csv</DDTFile>

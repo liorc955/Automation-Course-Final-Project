@@ -72,9 +72,11 @@ public class Verifications extends CommonOps {
         assertEquals(actual,expected);
     }
 
-    @Step("Verify Status Code")
-    public static void verifyStatusCode(int statusCode){
-        assertEquals(response.statusCode(),statusCode);
+    @Step("Verify Equals Of Numbers")
+    public static void verifyNumber(int numberOne, int numberTwo){
+        assertEquals(numberOne,numberTwo);
     }
+
+
 
 }

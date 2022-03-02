@@ -9,6 +9,7 @@ import io.restassured.RestAssured;
 import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -20,6 +21,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
 import org.w3c.dom.Document;
+
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
@@ -60,7 +63,6 @@ public class CommonOps extends Base {
         wait = new WebDriverWait(driver,timeOut);
         driver.manage().window().maximize();
         driver.get(getData("urlWeb"));
-        actions = new Actions(driver);
         ManagePages.initSauceDemo();
     }
 
@@ -103,14 +105,29 @@ public class CommonOps extends Base {
         httpRequest = RestAssured.given().auth().preemptive().basic(getData("UserName"),getData("Password"));
     }
 
+    public static void initElectron(){
+        System.setProperty("webdriver.chrome.driver",getData("ElectronDriverPath"));
+        ChromeOptions opt = new ChromeOptions();
+        opt.setBinary(getData("ElectronAppPath"));
+        dc.setCapability("chromeOptions",opt);
+        dc.setBrowserName("chrome");
+        driver = new ChromeDriver(dc);
+        ManagePages.initTodo();
+        long timeOut = Long.parseLong(getData("TimeOut"));
+        driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+        wait = new WebDriverWait(driver,timeOut);
+    }
+
     @BeforeClass
     public void beforeClass() {
         if (getData("PlatformName").equalsIgnoreCase("web")) initBrowser(getData("BrowserName"));
         else if (getData("PlatformName").equalsIgnoreCase("mobile")) initMobile();
         else if (getData("PlatformName").equalsIgnoreCase("api")) initAPI();
+        else if (getData("PlatformName").equalsIgnoreCase("electron")) initElectron();
         else throw new RuntimeException("Invalid platform name");
         softAssert = new SoftAssert();
         screen = new Screen();
+        actions = new Actions(driver);
     }
 
     @AfterClass
