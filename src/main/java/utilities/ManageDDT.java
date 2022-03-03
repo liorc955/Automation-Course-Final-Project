@@ -15,7 +15,7 @@ public class ManageDDT extends CommonOps {
 
     @DataProvider(name = "data-provider")
     public static Object[][] getDataObject(){
-        return getDataFromCSV(getData("DDTFile"));
+        return getDataFromCSV(ddtFilePath);
     }
 
     public static List<String> readCSV(String csvFile) {

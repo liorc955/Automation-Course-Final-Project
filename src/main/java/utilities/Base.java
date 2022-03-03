@@ -27,6 +27,8 @@ public class Base {
     protected static SoftAssert softAssert;
     protected static Screen screen;
     protected static DesiredCapabilities dc = new DesiredCapabilities();
+    public static String platform;
+    public static String ddtFilePath;
 
     // Rest API
     protected static RequestSpecification httpRequest;

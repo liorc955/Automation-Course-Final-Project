@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Mobile Suite" duration-ms="34749" started-at="2022-03-03T13:20:49 IST" finished-at="2022-03-03T13:21:24 IST">
+    <groups>
+    </groups>
+    <test name="Mobile Tests" duration-ms="34749" started-at="2022-03-03T13:20:49 IST" finished-at="2022-03-03T13:21:24 IST">
+      <class name="sanity.MortgageMobile">
+        <test-method status="PASS" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:sanity.MortgageMobile@52c8295b]" name="beforeClass" is-config="true" duration-ms="25624" started-at="2022-03-03T13:20:49 IST" finished-at="2022-03-03T13:21:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DDTFile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.MortgageMobile@52c8295b]" name="beforeMethod" is-config="true" duration-ms="88" started-at="2022-03-03T13:21:15 IST" finished-at="2022-03-03T13:21:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.MortgageMobile.test01_verifyMortgageCalculation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test01_verifyMortgageCalculation()[pri:0, instance:sanity.MortgageMobile@52c8295b]" name="test01_verifyMortgageCalculation" duration-ms="8609" started-at="2022-03-03T13:21:15 IST" description="Test01 - Verify Mortgage" finished-at="2022-03-03T13:21:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01_verifyMortgageCalculation -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.MortgageMobile@52c8295b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-03-03T13:21:23 IST" finished-at="2022-03-03T13:21:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:sanity.MortgageMobile@52c8295b]" name="afterClass" is-config="true" duration-ms="132" started-at="2022-03-03T13:21:23 IST" finished-at="2022-03-03T13:21:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- sanity.MortgageMobile -->
+    </test> <!-- Mobile Tests -->
+  </suite> <!-- Mobile Suite -->
+</testng-results>

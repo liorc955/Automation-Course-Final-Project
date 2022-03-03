@@ -16,10 +16,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import org.w3c.dom.Document;
 
@@ -29,11 +26,10 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.lang.reflect.Method;
 import java.net.URL;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.concurrent.TimeUnit;
 
 public class CommonOps extends Base {
+
 
     public static String getData(String nodeName){
         DocumentBuilder dBuilder;
@@ -139,12 +135,15 @@ public class CommonOps extends Base {
 
 
     @BeforeClass
-    public void beforeClass() {
-        if (getData("PlatformName").equalsIgnoreCase("web")) initBrowser(getData("BrowserName"));
-        else if (getData("PlatformName").equalsIgnoreCase("mobile")) initMobile();
-        else if (getData("PlatformName").equalsIgnoreCase("api")) initAPI();
-        else if (getData("PlatformName").equalsIgnoreCase("electron")) initElectron();
-        else if (getData("PlatformName").equalsIgnoreCase("desktop")) initDesktop();
+    @Parameters({ "PlatformName", "DDTFile" })
+    public void beforeClass(String PlatformName,@Optional("DDTFile") String DDTFile) {
+        platform = PlatformName;
+        ddtFilePath = DDTFile;
+        if (PlatformName.equalsIgnoreCase("web")) initBrowser(getData("BrowserName"));
+        else if (PlatformName.equalsIgnoreCase("mobile")) initMobile();
+        else if (PlatformName.equalsIgnoreCase("api")) initAPI();
+        else if (PlatformName.equalsIgnoreCase("electron")) initElectron();
+        else if (PlatformName.equalsIgnoreCase("desktop")) initDesktop();
         else throw new RuntimeException("Invalid platform name");
         softAssert = new SoftAssert();
         screen = new Screen();
@@ -153,8 +152,8 @@ public class CommonOps extends Base {
 
     @AfterClass
     public void afterClass(){
-        if(!getData("PlatformName").equalsIgnoreCase("api")){
-            if (!getData("PlatformName").equalsIgnoreCase("mobile")) driver.close();
+        if(!platform.equalsIgnoreCase("api")){
+            if (!platform.equalsIgnoreCase("mobile")) driver.close();
             else mobileDriver.close();
         }
         ManageDB.closeConnection();
@@ -162,7 +161,7 @@ public class CommonOps extends Base {
 
     @BeforeMethod
     public void beforeMethod(Method method){
-        if(getData("PlatformName").equalsIgnoreCase("api")){
+        if(platform.equalsIgnoreCase("api")){
             params = new JSONObject();
         } else {
             try {
@@ -175,7 +174,7 @@ public class CommonOps extends Base {
 
     @AfterMethod
     public void afterMethod(){
-        if (getData("PlatformName").equalsIgnoreCase("web")) driver.get(getData("urlWeb"));
+        if (platform.equalsIgnoreCase("web")) driver.get(getData("urlWeb"));
     }
 
 }

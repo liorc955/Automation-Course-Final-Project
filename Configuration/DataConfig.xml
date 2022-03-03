@@ -8,8 +8,6 @@
     <UserName>liorco</UserName>
     <Password>Aa123456!</Password>
 
-    <!-- General Config -->
-    <PlatformName>web</PlatformName>
 
     <!-- Web Config -->
     <BrowserName>chrome</BrowserName>
@@ -38,8 +36,5 @@
     <dbUrl>jdbc:postgresql://localhost:5432/</dbUrl>
     <dbUsername>postgres</dbUsername>
     <dbPassword>17263547tyty</dbPassword>
-
-    <!-- Data Driven Testing -->
-    <DDTFile>./DDTFiles/books.csv</DDTFile>
 
 </Enviroment>

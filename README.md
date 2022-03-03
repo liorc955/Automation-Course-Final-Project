@@ -15,7 +15,7 @@ In this project, I build a generic automation framework that supports various pl
  -  Desktop App - Done
  -  Electron Apps - Done
  -  Database Integration - Done
- -  CI/CD Integration
+ -  CI/CD Integration - Done
 
 
 ## Tech Stack
@@ -53,7 +53,19 @@ https://docs.qameta.io/allure/
 To run tests, run the following command
 
 ```bash
-  mvn test clean
+  mvn test -PWebTests
+```
+```bash
+  mvn test -PDekstopTests
+```
+```bash
+  mvn test -PElectronTests
+```
+```bash
+  mvn test -PAPITests
+```
+```bash
+  mvn test -PMobileTests
 ```
 
 To see Allure tests results run
@@ -61,4 +73,4 @@ To see Allure tests results run
 ```bash
   allure serve allure-results
 ```
-
+![alt text](https://i.ibb.co/xqr2Sy4/Screenshot-2022-03-03-131624.png)

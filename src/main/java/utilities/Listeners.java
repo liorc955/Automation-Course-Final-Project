@@ -22,7 +22,7 @@ public class Listeners extends CommonOps implements ITestListener{
     @Override
     public void onTestSuccess(ITestResult result) {
         System.out.println("---------Test:" + result.getName() + " Finished------");
-        if (!getData("PlatformName").equalsIgnoreCase("api")) {
+        if (!platform.equalsIgnoreCase("api")) {
             try {
                 MonteScreenRecorder.stopRecord();
             } catch (Exception e) {
@@ -36,7 +36,7 @@ public class Listeners extends CommonOps implements ITestListener{
     @Override
     public void onTestFailure(ITestResult result) {
         System.out.println("---------Test:" + result.getName() + " Failed------");
-        if (!getData("PlatformName").equalsIgnoreCase("api")) {
+        if (!platform.equalsIgnoreCase("api")) {
             AllureScreenshot();
             if (result.getName().contains("visualization")){
                 attachSikuliCompareImage(System.getProperty("user.dir") + getData("ImageRepo") + result.getName() + ".png");
@@ -72,7 +72,7 @@ public class Listeners extends CommonOps implements ITestListener{
 
     @Attachment(value = "Screenshot", type = "image/png")
     public byte[] AllureScreenshot() {
-        if (!(getData("PlatformName").equalsIgnoreCase("mobile")))
+        if (!(platform.equalsIgnoreCase("mobile")))
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
         else return ((TakesScreenshot) mobileDriver).getScreenshotAs(OutputType.BYTES);
     }

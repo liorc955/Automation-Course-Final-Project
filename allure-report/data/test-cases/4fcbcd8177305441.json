@@ -1,0 +1,258 @@
+{
+  "uid" : "4fcbcd8177305441",
+  "name" : "Test01 - Verify Book Title Property",
+  "fullName" : "sanity.BookAPI.test01_verifyBookTitle",
+  "historyId" : "db73b0622e99d7a6423ded1e33e99aa6",
+  "time" : {
+    "start" : 1646304781871,
+    "stop" : 1646304784759,
+    "duration" : 2888
+  },
+  "description" : "This test verifies book title property",
+  "descriptionHtml" : "<p>This test verifies book title property</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1646304779142,
+      "stop" : 1646304781542,
+      "duration" : 2400
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1646304781567,
+      "stop" : 1646304781568,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "This test verifies book title property",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Business Flow: Get Book Property",
+      "time" : {
+        "start" : 1646304781909,
+        "stop" : 1646304784736,
+        "duration" : 2827
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get Data From Server",
+        "time" : {
+          "start" : 1646304781921,
+          "stop" : 1646304784041,
+          "duration" : 2120
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "paramValues",
+          "value" : "BookStore/v1/Books"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Extract Value From JSON",
+        "time" : {
+          "start" : 1646304784042,
+          "stop" : 1646304784736,
+          "duration" : 694
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "path",
+          "value" : "books[0].title"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "jPath",
+        "value" : "books[0].title"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Verify Equals Of Texts",
+      "time" : {
+        "start" : 1646304784750,
+        "stop" : 1646304784754,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Git Pocket Guide"
+      }, {
+        "name" : "expected",
+        "value" : "Git Pocket Guide"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Business Flow: Get Status Code",
+      "time" : {
+        "start" : 1646304784754,
+        "stop" : 1646304784754,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Verify Equals Of Numbers",
+      "time" : {
+        "start" : 1646304784755,
+        "stop" : 1646304784755,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "numberOne",
+        "value" : "200"
+      }, {
+        "name" : "numberTwo",
+        "value" : "200"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 6
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1646304784768,
+      "stop" : 1646304784769,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "afterClass",
+    "time" : {
+      "start" : 1646304787482,
+      "stop" : 1646304787483,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.BookAPI"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.BookAPI"
+  }, {
+    "name" : "testMethod",
+    "value" : "test01_verifyBookTitle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "API Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.BookAPI"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-V2LQLCOS"
+  }, {
+    "name" : "thread",
+    "value" : "30260@LAPTOP-V2LQLCOS.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "DDTFile",
+    "value" : "./DDTFiles/books.csv"
+  }, {
+    "name" : "PlatformName",
+    "value" : "api"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4fcbcd8177305441.json",
+  "parameterValues" : [ "./DDTFiles/books.csv", "api" ]
+}

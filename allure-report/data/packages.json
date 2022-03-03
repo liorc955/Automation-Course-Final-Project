@@ -1,0 +1,399 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "sanity",
+    "children" : [ {
+      "name" : "ToDoElectron",
+      "children" : [ {
+        "name" : "test01_addAndVerifyNewTask",
+        "uid" : "c316638a34dd0e61",
+        "parentUid" : "130d2d3c957d8a59f629bc3a1f1f251a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646304021335,
+          "stop" : 1646304022144,
+          "duration" : 809
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron" ]
+      }, {
+        "name" : "test02_addAndVerifyNewTasks",
+        "uid" : "272173342d7553c4",
+        "parentUid" : "130d2d3c957d8a59f629bc3a1f1f251a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646304022368,
+          "stop" : 1646304023552,
+          "duration" : 1184
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "electron" ]
+      } ],
+      "uid" : "130d2d3c957d8a59f629bc3a1f1f251a"
+    }, {
+      "name" : "BookAPI",
+      "children" : [ {
+        "name" : "test01_verifyBookTitle",
+        "uid" : "1d6578b49cf0c76c",
+        "parentUid" : "b3e668454cacec2672f51b33658af773",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646304987730,
+          "stop" : 1646304991000,
+          "duration" : 3270
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/books.csv", "api" ]
+      }, {
+        "name" : "test02_addNewBook",
+        "uid" : "cfe9480efe2ba8e",
+        "parentUid" : "b3e668454cacec2672f51b33658af773",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646304991095,
+          "stop" : 1646304991677,
+          "duration" : 582
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/books.csv", "api", "9781491950296" ]
+      }, {
+        "name" : "test02_addNewBook",
+        "uid" : "a041888d8c0f4bde",
+        "parentUid" : "b3e668454cacec2672f51b33658af773",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646304991688,
+          "stop" : 1646304992127,
+          "duration" : 439
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/books.csv", "api", "9781593275846" ]
+      }, {
+        "name" : "test02_addNewBook",
+        "uid" : "72c53d217c109738",
+        "parentUid" : "b3e668454cacec2672f51b33658af773",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646304992140,
+          "stop" : 1646304992649,
+          "duration" : 509
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/books.csv", "api", "9781593277574" ]
+      }, {
+        "name" : "test03_updateBook",
+        "uid" : "fe5f2e37d49ec7f1",
+        "parentUid" : "b3e668454cacec2672f51b33658af773",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646304992659,
+          "stop" : 1646304993169,
+          "duration" : 510
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/books.csv", "api" ]
+      }, {
+        "name" : "test04_deleteAllUserBooks",
+        "uid" : "562d851006ac3480",
+        "parentUid" : "b3e668454cacec2672f51b33658af773",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646304993181,
+          "stop" : 1646304993659,
+          "duration" : 478
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/books.csv", "api" ]
+      } ],
+      "uid" : "b3e668454cacec2672f51b33658af773"
+    }, {
+      "name" : "SauceDemoWeb",
+      "children" : [ {
+        "name" : "test01_verifyTitle",
+        "uid" : "1b716ab2bb719690",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305002712,
+          "stop" : 1646305003186,
+          "duration" : 474
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web" ]
+      }, {
+        "name" : "test02_verifyItemsNumber",
+        "uid" : "a1a5becfce3da6ee",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305004383,
+          "stop" : 1646305004640,
+          "duration" : 257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web" ]
+      }, {
+        "name" : "test03_add_and_removeItemsFromInventory",
+        "uid" : "1d6d3020864d9626",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305005705,
+          "stop" : 1646305007338,
+          "duration" : 1633
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web" ]
+      }, {
+        "name" : "test04_verify_low_to_high_sortingItems",
+        "uid" : "b1d32e5df931f484",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305008328,
+          "stop" : 1646305009202,
+          "duration" : 874
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web" ]
+      }, {
+        "name" : "test05_verify_AllElementsDisplay",
+        "uid" : "23c99f7bcfbf911b",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305010053,
+          "stop" : 1646305010486,
+          "duration" : 433
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web" ]
+      }, {
+        "name" : "test06_verify_visualization_primary_header_logo",
+        "uid" : "d429c1848e868e55",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305011429,
+          "stop" : 1646305013207,
+          "duration" : 1778
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web" ]
+      }, {
+        "name" : "test07_verify_product_exists_inCart",
+        "uid" : "5ab21a2b0f915a4e",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305013975,
+          "stop" : 1646305014526,
+          "duration" : 551
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web", "Sauce Labs Backpack" ]
+      }, {
+        "name" : "test07_verify_product_exists_inCart",
+        "uid" : "521558fa0dff5f73",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305015192,
+          "stop" : 1646305015843,
+          "duration" : 651
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web", "Sauce Labs Bike Light" ]
+      }, {
+        "name" : "test07_verify_product_exists_inCart",
+        "uid" : "e8cb664062d5f3d5",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305016573,
+          "stop" : 1646305017326,
+          "duration" : 753
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web", "Sauce Labs Bolt T-Shirt" ]
+      }, {
+        "name" : "test07_verify_product_exists_inCart",
+        "uid" : "9dea578454e7e80d",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305017995,
+          "stop" : 1646305018854,
+          "duration" : 859
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web", "Sauce Labs Fleece Jacket" ]
+      }, {
+        "name" : "test07_verify_product_exists_inCart",
+        "uid" : "bc964ef80908945f",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305019539,
+          "stop" : 1646305020440,
+          "duration" : 901
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web", "Sauce Labs Onesie" ]
+      }, {
+        "name" : "test07_verify_product_exists_inCart",
+        "uid" : "e06501c3903c1edb",
+        "parentUid" : "b48f1b3dbc2aaca92e06db1bd94dca24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305021064,
+          "stop" : 1646305022091,
+          "duration" : 1027
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "./DDTFiles/items.csv", "web", "Test.allTheThings() T-Shirt (Red)" ]
+      } ],
+      "uid" : "b48f1b3dbc2aaca92e06db1bd94dca24"
+    }, {
+      "name" : "CalculatorDesktop",
+      "children" : [ {
+        "name" : "test01_addTwoNumbers",
+        "uid" : "45380ce2489d7af7",
+        "parentUid" : "6f1b41a095dd37ac98b5447b76e03950",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305006542,
+          "stop" : 1646305013060,
+          "duration" : 6518
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "desktop" ]
+      }, {
+        "name" : "test01_subtractTwoNumbers",
+        "uid" : "d30e35d4f0f7e94e",
+        "parentUid" : "6f1b41a095dd37ac98b5447b76e03950",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646305013110,
+          "stop" : 1646305018279,
+          "duration" : 5169
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : false,
+        "parameters" : [ "desktop" ]
+      } ],
+      "uid" : "6f1b41a095dd37ac98b5447b76e03950"
+    } ],
+    "uid" : "838c51b44d7d84d32e356b4096eba035"
+  } ]
+}

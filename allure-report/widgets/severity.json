@@ -1,0 +1,221 @@
+[ {
+  "uid" : "1d6d3020864d9626",
+  "name" : "Test03 - Add and Remove Item Testing",
+  "time" : {
+    "start" : 1646305005705,
+    "stop" : 1646305007338,
+    "duration" : 1633
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "272173342d7553c4",
+  "name" : "Test02 - Add And Verify New Tasks",
+  "time" : {
+    "start" : 1646304022368,
+    "stop" : 1646304023552,
+    "duration" : 1184
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "562d851006ac3480",
+  "name" : "Test04 - Delete All User's Books And Verify",
+  "time" : {
+    "start" : 1646304993181,
+    "stop" : 1646304993659,
+    "duration" : 478
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a041888d8c0f4bde",
+  "name" : "Test02 - Add a New Book And Verify",
+  "time" : {
+    "start" : 1646304991688,
+    "stop" : 1646304992127,
+    "duration" : 439
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "521558fa0dff5f73",
+  "name" : "Test07 - Verify Item Exists In Cart",
+  "time" : {
+    "start" : 1646305015192,
+    "stop" : 1646305015843,
+    "duration" : 651
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b716ab2bb719690",
+  "name" : "Test01 - Verify Title",
+  "time" : {
+    "start" : 1646305002712,
+    "stop" : 1646305003186,
+    "duration" : 474
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d429c1848e868e55",
+  "name" : "Test06 - Verify Primary Header Logo",
+  "time" : {
+    "start" : 1646305011429,
+    "stop" : 1646305013207,
+    "duration" : 1778
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23c99f7bcfbf911b",
+  "name" : "Test05 - Verify visibility of items",
+  "time" : {
+    "start" : 1646305010053,
+    "stop" : 1646305010486,
+    "duration" : 433
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72c53d217c109738",
+  "name" : "Test02 - Add a New Book And Verify",
+  "time" : {
+    "start" : 1646304992140,
+    "stop" : 1646304992649,
+    "duration" : 509
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1a5becfce3da6ee",
+  "name" : "Test02 - Verify Items Number",
+  "time" : {
+    "start" : 1646305004383,
+    "stop" : 1646305004640,
+    "duration" : 257
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d6578b49cf0c76c",
+  "name" : "Test01 - Verify Book Title Property",
+  "time" : {
+    "start" : 1646304987730,
+    "stop" : 1646304991000,
+    "duration" : 3270
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ab21a2b0f915a4e",
+  "name" : "Test07 - Verify Item Exists In Cart",
+  "time" : {
+    "start" : 1646305013975,
+    "stop" : 1646305014526,
+    "duration" : 551
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cfe9480efe2ba8e",
+  "name" : "Test02 - Add a New Book And Verify",
+  "time" : {
+    "start" : 1646304991095,
+    "stop" : 1646304991677,
+    "duration" : 582
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8cb664062d5f3d5",
+  "name" : "Test07 - Verify Item Exists In Cart",
+  "time" : {
+    "start" : 1646305016573,
+    "stop" : 1646305017326,
+    "duration" : 753
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45380ce2489d7af7",
+  "name" : "Test01 - Verify Addition Of Two Numbers",
+  "time" : {
+    "start" : 1646305006542,
+    "stop" : 1646305013060,
+    "duration" : 6518
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e06501c3903c1edb",
+  "name" : "Test07 - Verify Item Exists In Cart",
+  "time" : {
+    "start" : 1646305021064,
+    "stop" : 1646305022091,
+    "duration" : 1027
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc964ef80908945f",
+  "name" : "Test07 - Verify Item Exists In Cart",
+  "time" : {
+    "start" : 1646305019539,
+    "stop" : 1646305020440,
+    "duration" : 901
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d30e35d4f0f7e94e",
+  "name" : "Test01 - Verify Subtraction Of Two Numbers",
+  "time" : {
+    "start" : 1646305013110,
+    "stop" : 1646305018279,
+    "duration" : 5169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe5f2e37d49ec7f1",
+  "name" : "Test03 - Update a Book And Verify",
+  "time" : {
+    "start" : 1646304992659,
+    "stop" : 1646304993169,
+    "duration" : 510
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1d32e5df931f484",
+  "name" : "Test04 - Verify low to high sorting items",
+  "time" : {
+    "start" : 1646305008328,
+    "stop" : 1646305009202,
+    "duration" : 874
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9dea578454e7e80d",
+  "name" : "Test07 - Verify Item Exists In Cart",
+  "time" : {
+    "start" : 1646305017995,
+    "stop" : 1646305018854,
+    "duration" : 859
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c316638a34dd0e61",
+  "name" : "Test01 - Add And Verify a New Task ",
+  "time" : {
+    "start" : 1646304021335,
+    "stop" : 1646304022144,
+    "duration" : 809
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

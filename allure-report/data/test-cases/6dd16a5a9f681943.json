@@ -1,0 +1,529 @@
+{
+  "uid" : "6dd16a5a9f681943",
+  "name" : "Test03 - Add and Remove Item Testing",
+  "fullName" : "sanity.SauceDemoWeb.test03_add_and_removeItemsFromInventory",
+  "historyId" : "d0392247570fdd961564f0db7cf0d38d",
+  "time" : {
+    "start" : 1646304794693,
+    "stop" : 1646304795893,
+    "duration" : 1200
+  },
+  "description" : "This test verifies the functionality of adding and removing items from the inventory",
+  "descriptionHtml" : "<p>This test verifies the functionality of adding and removing items from the inventory</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1646304786585,
+      "stop" : 1646304791073,
+      "duration" : 4488
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1646304794054,
+      "stop" : 1646304794067,
+      "duration" : 13
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "before",
+    "time" : {
+      "start" : 1646304794069,
+      "stop" : 1646304794687,
+      "duration" : 618
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Business Flow: Login",
+      "time" : {
+        "start" : 1646304794070,
+        "stop" : 1646304794687,
+        "duration" : 617
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Update text Element",
+        "time" : {
+          "start" : 1646304794084,
+          "stop" : 1646304794308,
+          "duration" : 224
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Clear text Element",
+          "time" : {
+            "start" : 1646304794131,
+            "stop" : 1646304794208,
+            "duration" : 77
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> id: user-name]"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> id: user-name]"
+        }, {
+          "name" : "text",
+          "value" : "standard_user"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 1
+      }, {
+        "name" : "Update text Element",
+        "time" : {
+          "start" : 1646304794320,
+          "stop" : 1646304794512,
+          "duration" : 192
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Clear text Element",
+          "time" : {
+            "start" : 1646304794364,
+            "stop" : 1646304794421,
+            "duration" : 57
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> id: password]"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> id: password]"
+        }, {
+          "name" : "text",
+          "value" : "secret_sauce"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 1
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1646304794534,
+          "stop" : 1646304794687,
+          "duration" : 153
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> id: login-button]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userName",
+        "value" : "standard_user"
+      }, {
+        "name" : "password",
+        "value" : "secret_sauce"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 5
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 6
+  } ],
+  "testStage" : {
+    "description" : "This test verifies the functionality of adding and removing items from the inventory",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Business Flow: Add Item",
+      "time" : {
+        "start" : 1646304794694,
+        "stop" : 1646304794892,
+        "duration" : 198
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get Index Of Element In Elements List By Title",
+        "time" : {
+          "start" : 1646304794717,
+          "stop" : 1646304794762,
+          "duration" : 45
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "Sauce Labs Backpack"
+        }, {
+          "name" : "elements",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name]]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1646304794801,
+          "stop" : 1646304794892,
+          "duration" : 91
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item]] -> css selector: button[name*='add-to-cart']]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "itemName",
+        "value" : "Sauce Labs Backpack"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Business Flow: Add Item",
+      "time" : {
+        "start" : 1646304794892,
+        "stop" : 1646304795168,
+        "duration" : 276
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get Index Of Element In Elements List By Title",
+        "time" : {
+          "start" : 1646304794905,
+          "stop" : 1646304795038,
+          "duration" : 133
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "Sauce Labs Bolt T-Shirt"
+        }, {
+          "name" : "elements",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name]]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1646304795079,
+          "stop" : 1646304795168,
+          "duration" : 89
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item]] -> css selector: button[name*='add-to-cart']]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "itemName",
+        "value" : "Sauce Labs Bolt T-Shirt"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Business Flow: Remove Item",
+      "time" : {
+        "start" : 1646304795169,
+        "stop" : 1646304795488,
+        "duration" : 319
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get Index Of Element In Elements List By Title",
+        "time" : {
+          "start" : 1646304795185,
+          "stop" : 1646304795317,
+          "duration" : 132
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "Sauce Labs Bolt T-Shirt"
+        }, {
+          "name" : "elements",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name]]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1646304795389,
+          "stop" : 1646304795488,
+          "duration" : 99
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item]] -> css selector: button[name*='remove']]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "itemName",
+        "value" : "Sauce Labs Bolt T-Shirt"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Verify Text In Element",
+      "time" : {
+        "start" : 1646304795515,
+        "stop" : 1646304795594,
+        "duration" : 79
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: shopping_cart_badge]"
+      }, {
+        "name" : "expectedString",
+        "value" : "1"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Business Flow: Remove Item",
+      "time" : {
+        "start" : 1646304795594,
+        "stop" : 1646304795812,
+        "duration" : 218
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get Index Of Element In Elements List By Title",
+        "time" : {
+          "start" : 1646304795612,
+          "stop" : 1646304795684,
+          "duration" : 72
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "Sauce Labs Backpack"
+        }, {
+          "name" : "elements",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item_name]]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1646304795724,
+          "stop" : 1646304795812,
+          "duration" : 88
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[[[ChromeDriver: chrome on WINDOWS (07ad25e2ad7ca720b50f26f8310f4b3e)] -> class name: inventory_item]] -> css selector: button[name*='remove']]"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "itemName",
+        "value" : "Sauce Labs Backpack"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 13
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1646304795895,
+      "stop" : 1646304795965,
+      "duration" : 70
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "afterClass",
+    "time" : {
+      "start" : 1646304810609,
+      "stop" : 1646304810695,
+      "duration" : 86
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.SauceDemoWeb"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.SauceDemoWeb"
+  }, {
+    "name" : "testMethod",
+    "value" : "test03_add_and_removeItemsFromInventory"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Web Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Web Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.SauceDemoWeb"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-V2LQLCOS"
+  }, {
+    "name" : "thread",
+    "value" : "888@LAPTOP-V2LQLCOS.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "DDTFile",
+    "value" : "./DDTFiles/items.csv"
+  }, {
+    "name" : "PlatformName",
+    "value" : "web"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6dd16a5a9f681943.json",
+  "parameterValues" : [ "./DDTFiles/items.csv", "web" ]
+}
