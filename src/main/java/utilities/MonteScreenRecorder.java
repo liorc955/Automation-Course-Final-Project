@@ -15,6 +15,11 @@ import static org.monte.media.FormatKeys.FrameRateKey;
 import static org.monte.media.VideoFormatKeys.*;
 import static org.monte.media.VideoFormatKeys.QualityKey;
 
+/* ---------------------------------------------------
+    Class Name: MonteScreenRecorder
+    Class Description: All the methods are taken from the documentation of Monte Screen Recorder.
+    http://www.randelshofer.ch/monte/javadoc/index.html
+    --------------------------------------------------- */
 public class MonteScreenRecorder extends ScreenRecorder
 {
     public static ScreenRecorder screenRecorder;

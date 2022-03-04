@@ -28,6 +28,7 @@ public class Listeners extends CommonOps implements ITestListener{
             } catch (Exception e) {
                 e.printStackTrace();
             }
+            // Delete the test file recording (Which no necessarily when the test succeeded)
             File file = new File("./test-recordings/" + result.getName() + ".avi");
             if (file.delete()){ System.out.println("File deleted successfully"); } else { System.out.println("Failed to delete the file"); }
         }
@@ -38,7 +39,7 @@ public class Listeners extends CommonOps implements ITestListener{
         System.out.println("---------Test:" + result.getName() + " Failed------");
         if (!platform.equalsIgnoreCase("api")) {
             AllureScreenshot();
-            if (result.getName().contains("visualization")){
+            if (result.getName().contains("visualization")){ // Attach the image of the comparing visual testing to the allure report
                 attachSikuliCompareImage(System.getProperty("user.dir") + getData("ImageRepo") + result.getName() + ".png");
             }
             try {
@@ -70,6 +71,12 @@ public class Listeners extends CommonOps implements ITestListener{
         System.out.println("---------Ending Execution------");
     }
 
+    /* ---------------------------------------------------
+        Method Name: AllureScreenshot
+        Method Description: This method takes a screenshot and attaches it to the allure reports.
+        Method Parameters: void
+        Method Return: byte[]
+        --------------------------------------------------- */
     @Attachment(value = "Screenshot", type = "image/png")
     public byte[] AllureScreenshot() {
         if (!(platform.equalsIgnoreCase("mobile")))
@@ -77,6 +84,12 @@ public class Listeners extends CommonOps implements ITestListener{
         else return ((TakesScreenshot) mobileDriver).getScreenshotAs(OutputType.BYTES);
     }
 
+    /* ---------------------------------------------------
+        Method Name: attachSikuliCompareImage
+        Method Description: This method takes the compared image for visual testing and attaches it to the allure reports.
+        Method Parameters: String path
+        Method Return: byte[]
+        --------------------------------------------------- */
     @Attachment(value = "Sikuli Compare Image", type = "image/png")
     public static byte[] attachSikuliCompareImage(String path) {
         File file = new File(path);

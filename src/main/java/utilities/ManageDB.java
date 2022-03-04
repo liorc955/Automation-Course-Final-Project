@@ -5,6 +5,14 @@ import java.sql.SQLException;
 
 public class ManageDB extends CommonOps {
 
+    /* ---------------------------------------------------
+        Method Name: openConnection
+        Method Description: This method opens a connection with the PostgreSQL DB.
+        con - initializes the connection to the DB.
+        stmt - initializes the query to the DB.
+        Method Parameters: String dbUrl, String dbUser, String dbPass
+        Method Return: void
+        --------------------------------------------------- */
     public static void openConnection(String dbUrl, String dbUser, String dbPass){
         try {
             con = DriverManager.getConnection(dbUrl,dbUser,dbPass);
@@ -15,6 +23,12 @@ public class ManageDB extends CommonOps {
         }
     }
 
+    /* ---------------------------------------------------
+        Method Name: closeConnection
+        Method Description: This method closes the connection to the PostgreSQL DB.
+        Method Parameters: void
+        Method Return: void
+        --------------------------------------------------- */
     public static void closeConnection(){
         try {
             con.close();

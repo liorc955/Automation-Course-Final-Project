@@ -1,18 +1,23 @@
 package utilities;
 
-import org.json.simple.JSONObject;
 import org.testng.annotations.DataProvider;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ManageDDT extends CommonOps {
 
 
+    /* ---------------------------------------------------
+        Method Name: getDataObject
+        Method Description: This method gets the data from the getDataFromCSV(ddtFilePath)
+        method and pass it to the tests that are using DDT.
+        Method Parameters: void
+        Method Return: Object[][]
+        --------------------------------------------------- */
     @DataProvider(name = "data-provider")
     public static Object[][] getDataObject(){
         return getDataFromCSV(ddtFilePath);
@@ -30,6 +35,13 @@ public class ManageDDT extends CommonOps {
         return lines;
     }
 
+    /* ---------------------------------------------------
+        Method Name: getDataFromCSV
+        Method Description: This method fetches the data from a CSV file
+        and prepares it for DDT testing.
+        Method Parameters: String csvFile
+        Method Return: Object[][]
+        --------------------------------------------------- */
     public static Object[][] getDataFromCSV(String csvFile) {
         List<String> stringsLines = readCSV(csvFile);
         int rowSize = stringsLines.size();
@@ -43,16 +55,5 @@ public class ManageDDT extends CommonOps {
         }
         return objects;
     }
-
-    /*public static ArrayList<JSONObject> getListOfBooks(){
-        List<String> stringsLines = readCSV(getData());
-        ArrayList<JSONObject> books = new ArrayList<>();
-        for (int i=0; i<stringsLines.size(); i++){
-            JSONObject js = new JSONObject();
-            js.put("isbn",stringsLines.get(i));
-            books.add(js);
-        }
-        return books;
-    }*/
 
 }
