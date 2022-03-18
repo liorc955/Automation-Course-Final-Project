@@ -1,0 +1,327 @@
+{
+  "uid" : "bc950197215c2d1b",
+  "name" : "Test01 - Verify Title",
+  "fullName" : "sanity.SauceDemoWeb.test01_verifyTitle",
+  "historyId" : "bbee45a7910010ddcdb680bf15cfa055",
+  "time" : {
+    "start" : 1646489440704,
+    "stop" : 1646489441151,
+    "duration" : 447
+  },
+  "description" : "This test verifies the secondary header title",
+  "descriptionHtml" : "<p>This test verifies the secondary header title</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1646489423593,
+      "stop" : 1646489438998,
+      "duration" : 15405
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1646489439016,
+      "stop" : 1646489439129,
+      "duration" : 113
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "before",
+    "time" : {
+      "start" : 1646489439293,
+      "stop" : 1646489440620,
+      "duration" : 1327
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Business Flow: Login",
+      "time" : {
+        "start" : 1646489439343,
+        "stop" : 1646489440620,
+        "duration" : 1277
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Update text Element",
+        "time" : {
+          "start" : 1646489439394,
+          "stop" : 1646489439731,
+          "duration" : 337
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Clear text Element",
+          "time" : {
+            "start" : 1646489439487,
+            "stop" : 1646489439549,
+            "duration" : 62
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> id: user-name]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> id: user-name]"
+        }, {
+          "name" : "text",
+          "value" : "standard_user"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update text Element",
+        "time" : {
+          "start" : 1646489439765,
+          "stop" : 1646489440121,
+          "duration" : 356
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Clear text Element",
+          "time" : {
+            "start" : 1646489439881,
+            "stop" : 1646489439963,
+            "duration" : 82
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> id: password]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> id: password]"
+        }, {
+          "name" : "text",
+          "value" : "secret_sauce"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1646489440154,
+          "stop" : 1646489440620,
+          "duration" : 466
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> id: login-button]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userName",
+        "value" : "standard_user"
+      }, {
+        "name" : "password",
+        "value" : "secret_sauce"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "This test verifies the secondary header title",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Verify Text In Element",
+      "time" : {
+        "start" : 1646489440887,
+        "stop" : 1646489441022,
+        "duration" : 135
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: title]"
+      }, {
+        "name" : "expectedString",
+        "value" : "PRODUCTS"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1646489441161,
+      "stop" : 1646489441244,
+      "duration" : 83
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterClass",
+    "time" : {
+      "start" : 1646489456832,
+      "stop" : 1646489456912,
+      "duration" : 80
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.SauceDemoWeb"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.SauceDemoWeb"
+  }, {
+    "name" : "testMethod",
+    "value" : "test01_verifyTitle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Web Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Web Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.SauceDemoWeb"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-V2LQLCOS"
+  }, {
+    "name" : "thread",
+    "value" : "33148@LAPTOP-V2LQLCOS.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "DDTFile",
+    "value" : "./DDTFiles/items.csv"
+  }, {
+    "name" : "PlatformName",
+    "value" : "web"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "671da71dfbd21bee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646305002712,
+        "stop" : 1646305003186,
+        "duration" : 474
+      }
+    }, {
+      "uid" : "a75882109e15a1f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646304792686,
+        "stop" : 1646304793029,
+        "duration" : 343
+      }
+    }, {
+      "uid" : "5460aa88679c8fab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646303951554,
+        "stop" : 1646303952122,
+        "duration" : 568
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bc950197215c2d1b.json",
+  "parameterValues" : [ "./DDTFiles/items.csv", "web" ]
+}

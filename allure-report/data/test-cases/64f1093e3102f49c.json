@@ -1,0 +1,133 @@
+{
+  "uid" : "64f1093e3102f49c",
+  "name" : "Test04 - Verify Divination Of Two Numbers",
+  "fullName" : "sanity.CalculatorDesktop.test04_divideTwoNumbers",
+  "historyId" : "f209c220b9177c1d1b42cbe8981404a8",
+  "time" : {
+    "start" : 1647596577956,
+    "stop" : 1647596581159,
+    "duration" : 3203
+  },
+  "description" : "This test verifies Divination of two numbers",
+  "descriptionHtml" : "<p>This test verifies Divination of two numbers</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1647596565255,
+      "stop" : 1647596567971,
+      "duration" : 2716
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1647596577948,
+      "stop" : 1647596577953,
+      "duration" : 5
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1647596581160,
+      "stop" : 1647596581160,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterClass",
+    "time" : {
+      "start" : 1647596581163,
+      "stop" : 1647596581206,
+      "duration" : 43
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.CalculatorDesktop"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.CalculatorDesktop"
+  }, {
+    "name" : "testMethod",
+    "value" : "test04_divideTwoNumbers"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Desktop Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Desktop Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.CalculatorDesktop"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-V2LQLCOS"
+  }, {
+    "name" : "thread",
+    "value" : "4812@LAPTOP-V2LQLCOS.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "PlatformName",
+    "value" : "desktop"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "64f1093e3102f49c.json",
+  "parameterValues" : [ "desktop" ]
+}

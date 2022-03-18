@@ -1,6 +1,28 @@
 {
-  "total" : 4,
+  "total" : 6,
   "items" : [ {
+    "uid" : "221d2bebf5f1022220126c4db1cfd5b3",
+    "name" : "Desktop Suite",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "8399274b4bb69ec8699907dd6ef7de4e",
+    "name" : "Default Suite",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 4,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
     "uid" : "3ee6c328cd13b7bf8cf2e1560d3cdfae",
     "name" : "Web Suite",
     "statistic" : {
@@ -34,15 +56,15 @@
       "total" : 2
     }
   }, {
-    "uid" : "221d2bebf5f1022220126c4db1cfd5b3",
-    "name" : "Desktop Suite",
+    "uid" : "56d307e91aab052d4d4a0032dbd679a2",
+    "name" : "Mobile Suite",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 2
+      "total" : 1
     }
   } ]
 }

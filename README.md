@@ -73,4 +73,4 @@ To see Allure tests results run
 ```bash
   allure serve allure-results
 ```
-![alt text](https://i.ibb.co/xqr2Sy4/Screenshot-2022-03-03-131624.png)
+![alt text](https://i.ibb.co/zQgM23X/Screenshot-2022-03-03-131624.png)

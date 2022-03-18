@@ -35,6 +35,24 @@ public class DesktopFlows extends CommonOps {
         UIActions.click(calcMain.btn_equals);
     }
 
+    @Step("Business Flow: Multiply Two Numbers")
+    public static void multiply(int numOne, int numTwo){
+        UIActions.click(calcMain.btn_clear);
+        UIActions.click(getNumberElement(numOne));
+        UIActions.click(calcMain.btn_multiply);
+        UIActions.click(getNumberElement(numTwo));
+        UIActions.click(calcMain.btn_equals);
+    }
+
+    @Step("Business Flow: Divide Two Numbers")
+    public static void divide(int numOne, int numTwo){
+        UIActions.click(calcMain.btn_clear);
+        UIActions.click(getNumberElement(numOne));
+        UIActions.click(calcMain.btn_divide);
+        UIActions.click(getNumberElement(numTwo));
+        UIActions.click(calcMain.btn_equals);
+    }
+
     @Step("Business Flow: Get Calculator Result")
     public static int getResult(){
         int resultNumber = Integer.parseInt(UIActions

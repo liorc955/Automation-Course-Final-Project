@@ -1,0 +1,426 @@
+{
+  "uid" : "86eea1a0582ea775",
+  "name" : "Test07 - Verify Item Exists In Cart",
+  "fullName" : "sanity.SauceDemoWeb.test07_verify_product_exists_inCart",
+  "historyId" : "4478ea75a7bf9a8adf59cb31425aad9c",
+  "time" : {
+    "start" : 1646489451926,
+    "stop" : 1646489452580,
+    "duration" : 654
+  },
+  "description" : "This test verifies the existence of an item in a cart using DDT",
+  "descriptionHtml" : "<p>This test verifies the existence of an item in a cart using DDT</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1646489423593,
+      "stop" : 1646489438998,
+      "duration" : 15405
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1646489451397,
+      "stop" : 1646489451405,
+      "duration" : 8
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "before",
+    "time" : {
+      "start" : 1646489451408,
+      "stop" : 1646489451920,
+      "duration" : 512
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Business Flow: Login",
+      "time" : {
+        "start" : 1646489451408,
+        "stop" : 1646489451920,
+        "duration" : 512
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Update text Element",
+        "time" : {
+          "start" : 1646489451421,
+          "stop" : 1646489451585,
+          "duration" : 164
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Clear text Element",
+          "time" : {
+            "start" : 1646489451466,
+            "stop" : 1646489451518,
+            "duration" : 52
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> id: user-name]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> id: user-name]"
+        }, {
+          "name" : "text",
+          "value" : "standard_user"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Update text Element",
+        "time" : {
+          "start" : 1646489451607,
+          "stop" : 1646489451771,
+          "duration" : 164
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Clear text Element",
+          "time" : {
+            "start" : 1646489451654,
+            "stop" : 1646489451705,
+            "duration" : 51
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "elem",
+            "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> id: password]"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> id: password]"
+        }, {
+          "name" : "text",
+          "value" : "secret_sauce"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1646489451779,
+          "stop" : 1646489451920,
+          "duration" : 141
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> id: login-button]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userName",
+        "value" : "standard_user"
+      }, {
+        "name" : "password",
+        "value" : "secret_sauce"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "This test verifies the existence of an item in a cart using DDT",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Business Flow: Add Item",
+      "time" : {
+        "start" : 1646489451926,
+        "stop" : 1646489452183,
+        "duration" : 257
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get Index Of Element In Elements List By Title",
+        "time" : {
+          "start" : 1646489451939,
+          "stop" : 1646489452069,
+          "duration" : 130
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "Sauce Labs Bolt T-Shirt"
+        }, {
+          "name" : "elements",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1646489452103,
+          "stop" : 1646489452183,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item]] -> css selector: button[name*='add-to-cart']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "itemName",
+        "value" : "Sauce Labs Bolt T-Shirt"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on Element",
+      "time" : {
+        "start" : 1646489452203,
+        "stop" : 1646489452328,
+        "duration" : 125
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elem",
+        "value" : "[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: shopping_cart_link]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify Element Exists In List Of Elements By Title",
+      "time" : {
+        "start" : 1646489452342,
+        "stop" : 1646489452479,
+        "duration" : 137
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get Index Of Element In Elements List By Title",
+        "time" : {
+          "start" : 1646489452358,
+          "stop" : 1646489452479,
+          "duration" : 121
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "Sauce Labs Bolt T-Shirt"
+        }, {
+          "name" : "elements",
+          "value" : "[[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name]]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "elements",
+        "value" : "[[[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name], [[ChromeDriver: chrome on WINDOWS (e2c19794fad1ce5a92e32c60f9427750)] -> class name: inventory_item_name]]"
+      }, {
+        "name" : "name",
+        "value" : "Sauce Labs Bolt T-Shirt"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1646489452582,
+      "stop" : 1646489452625,
+      "duration" : 43
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterClass",
+    "time" : {
+      "start" : 1646489456832,
+      "stop" : 1646489456912,
+      "duration" : 80
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.SauceDemoWeb"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.SauceDemoWeb"
+  }, {
+    "name" : "testMethod",
+    "value" : "test07_verify_product_exists_inCart"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Web Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Web Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.SauceDemoWeb"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-V2LQLCOS"
+  }, {
+    "name" : "thread",
+    "value" : "33148@LAPTOP-V2LQLCOS.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "DDTFile",
+    "value" : "./DDTFiles/items.csv"
+  }, {
+    "name" : "PlatformName",
+    "value" : "web"
+  }, {
+    "name" : "arg0",
+    "value" : "Sauce Labs Bolt T-Shirt"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3074a3d2e2507a92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646305016573,
+        "stop" : 1646305017326,
+        "duration" : 753
+      }
+    }, {
+      "uid" : "652eeb08839ef7d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646304804567,
+        "stop" : 1646304805311,
+        "duration" : 744
+      }
+    }, {
+      "uid" : "2e73e554d6f35241",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646303962418,
+        "stop" : 1646303963177,
+        "duration" : 759
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "86eea1a0582ea775.json",
+  "parameterValues" : [ "./DDTFiles/items.csv", "web", "Sauce Labs Bolt T-Shirt" ]
+}

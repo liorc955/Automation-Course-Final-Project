@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Mobile Suite" duration-ms="34749" started-at="2022-03-03T13:20:49 IST" finished-at="2022-03-03T13:21:24 IST">
+  <suite name="Desktop Suite" duration-ms="21145" started-at="2022-03-18T11:47:18 IST" finished-at="2022-03-18T11:47:39 IST">
     <groups>
     </groups>
-    <test name="Mobile Tests" duration-ms="34749" started-at="2022-03-03T13:20:49 IST" finished-at="2022-03-03T13:21:24 IST">
-      <class name="sanity.MortgageMobile">
-        <test-method status="PASS" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:sanity.MortgageMobile@52c8295b]" name="beforeClass" is-config="true" duration-ms="25624" started-at="2022-03-03T13:20:49 IST" finished-at="2022-03-03T13:21:15 IST">
+    <test name="Desktop Tests" duration-ms="21145" started-at="2022-03-18T11:47:18 IST" finished-at="2022-03-18T11:47:39 IST">
+      <class name="sanity.CalculatorDesktop">
+        <test-method status="PASS" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="beforeClass" is-config="true" duration-ms="3016" started-at="2022-03-18T11:47:18 IST" finished-at="2022-03-18T11:47:21 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mobile]]>
+                <![CDATA[desktop]]>
               </value>
             </param>
             <param index="1">
@@ -23,30 +23,87 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.MortgageMobile@52c8295b]" name="beforeMethod" is-config="true" duration-ms="88" started-at="2022-03-03T13:21:15 IST" finished-at="2022-03-03T13:21:15 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="beforeMethod" is-config="true" duration-ms="102" started-at="2022-03-18T11:47:21 IST" finished-at="2022-03-18T11:47:21 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void sanity.MortgageMobile.test01_verifyMortgageCalculation()]]>
+                <![CDATA[public void sanity.CalculatorDesktop.test01_addTwoNumbers()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test01_verifyMortgageCalculation()[pri:0, instance:sanity.MortgageMobile@52c8295b]" name="test01_verifyMortgageCalculation" duration-ms="8609" started-at="2022-03-03T13:21:15 IST" description="Test01 - Verify Mortgage" finished-at="2022-03-03T13:21:23 IST">
+        <test-method status="PASS" signature="test01_addTwoNumbers()[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="test01_addTwoNumbers" duration-ms="5009" started-at="2022-03-18T11:47:21 IST" description="Test01 - Verify Addition Of Two Numbers" finished-at="2022-03-18T11:47:26 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test01_verifyMortgageCalculation -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.MortgageMobile@52c8295b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-03-03T13:21:23 IST" finished-at="2022-03-03T13:21:23 IST">
+        </test-method> <!-- test01_addTwoNumbers -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-03-18T11:47:26 IST" finished-at="2022-03-18T11:47:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:sanity.MortgageMobile@52c8295b]" name="afterClass" is-config="true" duration-ms="132" started-at="2022-03-03T13:21:23 IST" finished-at="2022-03-03T13:21:24 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2022-03-18T11:47:26 IST" finished-at="2022-03-18T11:47:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.CalculatorDesktop.test02_subtractTwoNumbers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test02_subtractTwoNumbers()[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="test02_subtractTwoNumbers" duration-ms="3921" started-at="2022-03-18T11:47:26 IST" description="Test02 - Verify Subtraction Of Two Numbers" finished-at="2022-03-18T11:47:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02_subtractTwoNumbers -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-03-18T11:47:30 IST" finished-at="2022-03-18T11:47:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="beforeMethod" is-config="true" duration-ms="8" started-at="2022-03-18T11:47:30 IST" finished-at="2022-03-18T11:47:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.CalculatorDesktop.test03_multiplyTwoNumbers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test03_multiplyTwoNumbers()[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="test03_multiplyTwoNumbers" duration-ms="4274" started-at="2022-03-18T11:47:30 IST" description="Test03 - Verify Multiplication Of Two Numbers" finished-at="2022-03-18T11:47:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03_multiplyTwoNumbers -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-03-18T11:47:35 IST" finished-at="2022-03-18T11:47:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2022-03-18T11:47:35 IST" finished-at="2022-03-18T11:47:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.CalculatorDesktop.test04_divideTwoNumbers()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test04_divideTwoNumbers()[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="test04_divideTwoNumbers" duration-ms="4234" started-at="2022-03-18T11:47:35 IST" description="Test04 - Verify Divination Of Two Numbers" finished-at="2022-03-18T11:47:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04_divideTwoNumbers -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-03-18T11:47:39 IST" finished-at="2022-03-18T11:47:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:sanity.CalculatorDesktop@2a551a63]" name="afterClass" is-config="true" duration-ms="41" started-at="2022-03-18T11:47:39 IST" finished-at="2022-03-18T11:47:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- sanity.MortgageMobile -->
-    </test> <!-- Mobile Tests -->
-  </suite> <!-- Mobile Suite -->
+      </class> <!-- sanity.CalculatorDesktop -->
+    </test> <!-- Desktop Tests -->
+  </suite> <!-- Desktop Suite -->
 </testng-results>

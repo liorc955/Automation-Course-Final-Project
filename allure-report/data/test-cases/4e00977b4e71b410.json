@@ -1,0 +1,279 @@
+{
+  "uid" : "4e00977b4e71b410",
+  "name" : "Test02 - Add a New Book And Verify",
+  "fullName" : "sanity.BookAPI.test02_addNewBook",
+  "historyId" : "aa290aff4933288006e700f26c495221",
+  "time" : {
+    "start" : 1646304991095,
+    "stop" : 1646304991677,
+    "duration" : 582
+  },
+  "description" : "This test adds a new book to a user and verifies it",
+  "descriptionHtml" : "<p>This test adds a new book to a user and verifies it</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 2,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1646304984834,
+      "stop" : 1646304987421,
+      "duration" : 2587
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1646304991089,
+      "stop" : 1646304991090,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "This test adds a new book to a user and verifies it",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Business Flow: Post a New Book",
+      "time" : {
+        "start" : 1646304991095,
+        "stop" : 1646304991656,
+        "duration" : 561
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Post Data To Server",
+        "time" : {
+          "start" : 1646304991098,
+          "stop" : 1646304991656,
+          "duration" : 558
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "resource",
+          "value" : "BookStore/v1/Books"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "isbn",
+        "value" : "9781491950296"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Business Flow: Get Status Code",
+      "time" : {
+        "start" : 1646304991656,
+        "stop" : 1646304991656,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify Equals Of Numbers",
+      "time" : {
+        "start" : 1646304991656,
+        "stop" : 1646304991656,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "numberOne",
+        "value" : "201"
+      }, {
+        "name" : "numberTwo",
+        "value" : "201"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Extract Value From JSON",
+      "time" : {
+        "start" : 1646304991656,
+        "stop" : 1646304991676,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "path",
+        "value" : "books[0].isbn"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify Equals Of Texts",
+      "time" : {
+        "start" : 1646304991676,
+        "stop" : 1646304991676,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "9781491950296"
+      }, {
+        "name" : "expected",
+        "value" : "9781491950296"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1646304991681,
+      "stop" : 1646304991681,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterClass",
+    "time" : {
+      "start" : 1646304993667,
+      "stop" : 1646304993667,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.BookAPI"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.BookAPI"
+  }, {
+    "name" : "testMethod",
+    "value" : "test02_addNewBook"
+  }, {
+    "name" : "parentSuite",
+    "value" : "API Suite"
+  }, {
+    "name" : "suite",
+    "value" : "API Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.BookAPI"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-V2LQLCOS"
+  }, {
+    "name" : "thread",
+    "value" : "32116@LAPTOP-V2LQLCOS.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "DDTFile",
+    "value" : "./DDTFiles/books.csv"
+  }, {
+    "name" : "PlatformName",
+    "value" : "api"
+  }, {
+    "name" : "arg0",
+    "value" : "9781491950296"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "67d55919660964b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646304784788,
+        "stop" : 1646304785265,
+        "duration" : 477
+      }
+    }, {
+      "uid" : "62322f37eb843a81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646303995336,
+        "stop" : 1646303995897,
+        "duration" : 561
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4e00977b4e71b410.json",
+  "parameterValues" : [ "./DDTFiles/books.csv", "api", "9781491950296" ]
+}

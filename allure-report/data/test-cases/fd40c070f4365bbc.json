@@ -1,0 +1,328 @@
+{
+  "uid" : "fd40c070f4365bbc",
+  "name" : "Test04 - Verify Divination Of Two Numbers",
+  "fullName" : "sanity.CalculatorDesktop.test04_divideTwoNumbers",
+  "historyId" : "f209c220b9177c1d1b42cbe8981404a8",
+  "time" : {
+    "start" : 1647596855326,
+    "stop" : 1647596859659,
+    "duration" : 4333
+  },
+  "description" : "This test verifies Divination of two numbers",
+  "descriptionHtml" : "<p>This test verifies Divination of two numbers</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 2,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1647596838631,
+      "stop" : 1647596841618,
+      "duration" : 2987
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1647596855317,
+      "stop" : 1647596855323,
+      "duration" : 6
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "This test verifies Divination of two numbers",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Business Flow: Divide Two Numbers",
+      "time" : {
+        "start" : 1647596855326,
+        "stop" : 1647596859030,
+        "duration" : 3704
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1647596855387,
+          "stop" : 1647596856028,
+          "duration" : 641
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=Microsoft.WindowsCalculator_8wekyb3d8bbwe!App, javascriptEnabled=true, platform=WINDOWS, platformName=Windows}] -> name: Clear]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1647596856150,
+          "stop" : 1647596856844,
+          "duration" : 694
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=Microsoft.WindowsCalculator_8wekyb3d8bbwe!App, javascriptEnabled=true, platform=WINDOWS, platformName=Windows}] -> name: Four]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1647596856948,
+          "stop" : 1647596857614,
+          "duration" : 666
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=Microsoft.WindowsCalculator_8wekyb3d8bbwe!App, javascriptEnabled=true, platform=WINDOWS, platformName=Windows}] -> name: Divide by]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1647596857709,
+          "stop" : 1647596858315,
+          "duration" : 606
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=Microsoft.WindowsCalculator_8wekyb3d8bbwe!App, javascriptEnabled=true, platform=WINDOWS, platformName=Windows}] -> name: Two]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Click on Element",
+        "time" : {
+          "start" : 1647596858406,
+          "stop" : 1647596859030,
+          "duration" : 624
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "elem",
+          "value" : "[[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=Microsoft.WindowsCalculator_8wekyb3d8bbwe!App, javascriptEnabled=true, platform=WINDOWS, platformName=Windows}] -> name: Equals]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "numOne",
+        "value" : "4"
+      }, {
+        "name" : "numTwo",
+        "value" : "2"
+      } ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Business Flow: Get Calculator Result",
+      "time" : {
+        "start" : 1647596859030,
+        "stop" : 1647596859558,
+        "duration" : 528
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get Text Of Element",
+        "time" : {
+          "start" : 1647596859284,
+          "stop" : 1647596859558,
+          "duration" : 274
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element",
+          "value" : "[[io.appium.java_client.windows.WindowsDriver, Capabilities: {app=Microsoft.WindowsCalculator_8wekyb3d8bbwe!App, javascriptEnabled=true, platform=WINDOWS, platformName=Windows}] -> xpath: //*[@AutomationId='CalculatorResults']]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify Equals Of Numbers",
+      "time" : {
+        "start" : 1647596859558,
+        "stop" : 1647596859558,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "numberOne",
+        "value" : "2"
+      }, {
+        "name" : "numberTwo",
+        "value" : "2"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1647596859660,
+      "stop" : 1647596859660,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterClass",
+    "time" : {
+      "start" : 1647596859663,
+      "stop" : 1647596859703,
+      "duration" : 40
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "sanity.CalculatorDesktop"
+  }, {
+    "name" : "testClass",
+    "value" : "sanity.CalculatorDesktop"
+  }, {
+    "name" : "testMethod",
+    "value" : "test04_divideTwoNumbers"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Desktop Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Desktop Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "sanity.CalculatorDesktop"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-V2LQLCOS"
+  }, {
+    "name" : "thread",
+    "value" : "25636@LAPTOP-V2LQLCOS.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "PlatformName",
+    "value" : "desktop"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "64f1093e3102f49c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1647596577956,
+        "stop" : 1647596581159,
+        "duration" : 3203
+      }
+    }, {
+      "uid" : "59d7019e17818174",
+      "status" : "skipped",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1647596320267,
+        "stop" : 1647596320267,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fd40c070f4365bbc.json",
+  "parameterValues" : [ "desktop" ]
+}

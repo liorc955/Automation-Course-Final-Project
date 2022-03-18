@@ -27,4 +27,8 @@ public class MainPage {
     public WebElement field_result;
     @FindBy(how= How.NAME, using = "Clear")
     public WebElement btn_clear;
+    @FindBy(how= How.NAME, using = "Divide by")
+    public WebElement btn_divide;
+    @FindBy(how= How.NAME, using = "Multiply by")
+    public WebElement btn_multiply;
 }
