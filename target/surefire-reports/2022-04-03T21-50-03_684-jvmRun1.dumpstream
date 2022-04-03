@@ -1,0 +1,33 @@
+# Created at 2022-04-03T21:50:14.178
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2022-04-03T21:50:14.979
+Unexpected IOException with stream: Recorded Screen Cast File is Now Created
+
+
+# Created at 2022-04-03T21:50:15.149
+Unexpected IOException with stream: ---------Staring Test: test01_addAndVerifyNewTask ------
+
+
+# Created at 2022-04-03T21:50:15.151
+Unexpected IOException: 5,1,sanity.ToDoElectron,test01_addAndVerifyNewTask(sanity.ToDoElectron),sanity.ToDoElectron,null,null
+
+
+# Created at 2022-04-03T21:50:18.229
+Unexpected IOException with stream: ---------Test:test01_addAndVerifyNewTask Failed------
+
+
+# Created at 2022-04-03T21:50:18.242
+Unexpected IOException with stream: ---------Test:test01_addAndVerifyNewTask Failed------
+
+
+# Created at 2022-04-03T21:50:18.249
+Unexpected IOException with stream: ---------Ending Execution------
+
+

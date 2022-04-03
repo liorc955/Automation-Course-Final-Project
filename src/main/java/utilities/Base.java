@@ -62,6 +62,7 @@ public class Base {
 
     // Electron Page Objects
     protected static pageObjects.todolist.MainPage todoMain;
+    protected static pageObjects.todolist.FilterSideMenu todoFilterSideMenu;
 
     // Desktop Page Objects
     protected static pageObjects.calculator.MainPage calcMain;

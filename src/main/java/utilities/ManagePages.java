@@ -39,8 +39,9 @@ public class ManagePages extends Base {
         Method Parameters: void
         Method Return: void
         --------------------------------------------------- */
-    public static void initTodo(){
+    public static void initTodo() {
         todoMain = PageFactory.initElements(driver, pageObjects.todolist.MainPage.class);
+        todoFilterSideMenu = PageFactory.initElements(driver,pageObjects.todolist.FilterSideMenu.class);
     }
 
     /* ---------------------------------------------------
