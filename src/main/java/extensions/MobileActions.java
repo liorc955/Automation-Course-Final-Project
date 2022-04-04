@@ -64,9 +64,8 @@ public class MobileActions extends UIActions {
         PointOption pointOptionStart, pointOptionEnd;
 
         // init screen variables
-        Dimension dims = driver.manage().window().getSize();
+        Dimension dims = mobileDriver.manage().window().getSize();
 
-        // init start point = center of screen
         pointOptionStart = PointOption.point(dims.width / 2, dims.height / 2);
 
         switch (dir) {
@@ -76,10 +75,12 @@ public class MobileActions extends UIActions {
             case UP: // center of header
                 pointOptionEnd = PointOption.point(dims.width / 2, edgeBorder);
                 break;
-            case LEFT: // center of left side
+            case LEFT:
+                pointOptionStart = PointOption.point(dims.width - 200, dims.height / 2);
                 pointOptionEnd = PointOption.point(edgeBorder, dims.height / 2);
                 break;
-            case RIGHT: // center of right side
+            case RIGHT:
+                pointOptionStart = PointOption.point((dims.width / 2) - 300, dims.height / 2);
                 pointOptionEnd = PointOption.point(dims.width - edgeBorder, dims.height / 2);
                 break;
             default:

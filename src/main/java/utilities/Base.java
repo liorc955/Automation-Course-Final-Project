@@ -59,6 +59,7 @@ public class Base {
 
     // Mobile Page Objects
     protected static pageObjects.mortgage.MainPage mortgageMain;
+    protected static pageObjects.mortgage.SavedPage mortgageSaved;
 
     // Electron Page Objects
     protected static pageObjects.todolist.MainPage todoMain;

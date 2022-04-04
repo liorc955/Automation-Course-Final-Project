@@ -56,7 +56,7 @@ To run tests, run the following command
   mvn test -PWebTests
 ```
 ```bash
-  mvn test -PDekstopTests
+  mvn test -PDesktopTests
 ```
 ```bash
   mvn test -PElectronTests
@@ -73,4 +73,4 @@ To see Allure tests results run
 ```bash
   allure serve allure-results
 ```
-![alt text](https://i.ibb.co/HNTG8Fb/allure.png)
+![alt text](https://i.ibb.co/p0Z8vws/12.png)

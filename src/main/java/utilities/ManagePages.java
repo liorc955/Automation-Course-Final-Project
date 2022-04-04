@@ -2,6 +2,7 @@ package utilities;
 
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.mortgage.MainPage;
+import pageObjects.mortgage.SavedPage;
 import pageObjects.saucedemo.*;
 
 
@@ -31,6 +32,7 @@ public class ManagePages extends Base {
         --------------------------------------------------- */
     public static void initMortgage(){
         mortgageMain = new MainPage(mobileDriver);
+        mortgageSaved = new SavedPage(mobileDriver);
     }
 
     /* ---------------------------------------------------
