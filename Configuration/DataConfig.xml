@@ -26,15 +26,15 @@
 
     <!-- Electron Config -->
     <ElectronDriverPath>./Drivers/electrondriver.exe</ElectronDriverPath>
-    <ElectronAppPath>C:/Users/liorc/AppData/Local/Programs/todolist/Todolist.exe</ElectronAppPath>
+    <ElectronAppPath>/AppData/Local/Programs/todolist/Todolist.exe</ElectronAppPath>
 
     <!-- Desktop Config -->
     <DesktopApp>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</DesktopApp>
     <WinAppDriverServer>http://127.0.0.1:4723/</WinAppDriverServer>
 
     <!-- Database Config -->
-    <dbUrl>jdbc:postgresql://localhost:5432/</dbUrl>
-    <dbUsername>postgres</dbUsername>
-    <dbPassword>17263547tyty</dbPassword>
+    <dbUrl>jdbc:mysql://remotemysql.com:3306/C1AOmH1Qb3</dbUrl>
+    <dbUsername>C1AOmH1Qb3</dbUsername>
+    <dbPassword>1dj9lOK5Vj</dbPassword>
 
 </Enviroment>
