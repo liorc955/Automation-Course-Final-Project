@@ -2,7 +2,6 @@ package utilities;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
-import io.appium.java_client.windows.WindowsDriver;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -13,7 +12,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.asserts.SoftAssert;
-import pageObjects.mortgage.MainPage;
 import pageObjects.saucedemo.*;
 
 import java.sql.Connection;
@@ -29,6 +27,7 @@ public class Base {
     protected static DesiredCapabilities dc = new DesiredCapabilities();
     public static String platform;
     public static String ddtFilePath;
+    public static boolean usingDB = false;
 
     // Rest API
     protected static RequestSpecification httpRequest;

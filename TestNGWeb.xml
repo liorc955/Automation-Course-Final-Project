@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Web Suite" parallel="false">
+    <parameter name="PlatformName" value="web"/>
     <test name="Web Tests">
-        <parameter name="PlatformName" value="web"/>
         <classes>
             <class name="sanity.SauceDemoWeb"/>
             <parameter name="DDTFile" value="./DDTFiles/items.csv"></parameter>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Web DB Tests">
+        <classes>
+            <class name="sanity.SauceDemoDB"/>
+            <parameter name="EnableDB" value="true"></parameter>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

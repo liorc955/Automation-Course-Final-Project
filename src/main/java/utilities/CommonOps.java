@@ -169,7 +169,7 @@ public class CommonOps extends Base {
     public static void initElectron(){
         System.setProperty("webdriver.chrome.driver",getData("ElectronDriverPath"));
         ChromeOptions opt = new ChromeOptions();
-        opt.setBinary(getData("ElectronAppPath"));
+        opt.setBinary(System.getProperty("user.home") + getData("ElectronAppPath"));
         dc.setCapability("chromeOptions",opt);
         dc.setBrowserName("chrome");
         driver = new ChromeDriver(dc);
@@ -209,14 +209,15 @@ public class CommonOps extends Base {
           - The platform testing type: web, mobile, api, electron and desktop
           - The soft assertion object for testng assertions and screen object for recording tests
           - Call to ManageDB.openConnection() method to connect to the DB for testing with DB data
-          Method Parameters: String PlatformName, String DDTFile - from testng xml files
+          Method Parameters: String PlatformName, String DDTFile, String EnableDB - from testng xml files
           Method Return: void
           --------------------------------------------------- */
     @BeforeClass
-    @Parameters({ "PlatformName", "DDTFile" })
-    public void beforeClass(String PlatformName,@Optional("DDTFile") String DDTFile) {
+    @Parameters({ "PlatformName", "DDTFile", "EnableDB" })
+    public void beforeClass(String PlatformName,@Optional("DDTFile") String DDTFile,@Optional("EnableDB") String EnableDB) {
         platform = PlatformName;
         ddtFilePath = DDTFile;
+        usingDB = Boolean.parseBoolean(EnableDB);
         if (PlatformName.equalsIgnoreCase("web")) initBrowser(getData("BrowserName"));
         else if (PlatformName.equalsIgnoreCase("mobile")) initMobile();
         else if (PlatformName.equalsIgnoreCase("api")) initAPI();
@@ -225,6 +226,7 @@ public class CommonOps extends Base {
         else throw new RuntimeException("Invalid platform name");
         softAssert = new SoftAssert();
         screen = new Screen();
+        if (usingDB)
         ManageDB.openConnection(getData("dbUrl"),getData("dbUsername"),getData("dbPassword"));
     }
 
@@ -243,6 +245,7 @@ public class CommonOps extends Base {
             if (!platform.equalsIgnoreCase("mobile")) driver.close();
             else mobileDriver.close();
         }
+        if (usingDB)
         ManageDB.closeConnection();
     }
 

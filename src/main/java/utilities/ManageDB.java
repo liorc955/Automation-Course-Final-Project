@@ -7,7 +7,7 @@ public class ManageDB extends CommonOps {
 
     /* ---------------------------------------------------
         Method Name: openConnection
-        Method Description: This method opens a connection with the PostgreSQL DB.
+        Method Description: This method opens a connection with the MySQL DB.
         con - initializes the connection to the DB.
         stmt - initializes the query to the DB.
         Method Parameters: String dbUrl, String dbUser, String dbPass
@@ -15,9 +15,10 @@ public class ManageDB extends CommonOps {
         --------------------------------------------------- */
     public static void openConnection(String dbUrl, String dbUser, String dbPass){
         try {
+            Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(dbUrl,dbUser,dbPass);
             stmt = con.createStatement();
-        } catch (SQLException e) {
+        } catch (Exception e) {
             System.out.println("Can not connect to the DB server");
             System.out.println(e);
         }
@@ -25,7 +26,7 @@ public class ManageDB extends CommonOps {
 
     /* ---------------------------------------------------
         Method Name: closeConnection
-        Method Description: This method closes the connection to the PostgreSQL DB.
+        Method Description: This method closes the connection to the MySQL DB.
         Method Parameters: void
         Method Return: void
         --------------------------------------------------- */
