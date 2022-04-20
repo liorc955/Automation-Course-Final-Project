@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Web Suite" duration-ms="35336" started-at="2022-04-05T18:33:47 IDT" finished-at="2022-04-05T18:34:22 IDT">
+  <suite name="API Suite" duration-ms="9753" started-at="2022-04-20T10:01:41 IDT" finished-at="2022-04-20T10:01:51 IDT">
     <groups>
     </groups>
-    <test name="Web Tests" duration-ms="29406" started-at="2022-04-05T18:33:47 IDT" finished-at="2022-04-05T18:34:16 IDT">
-      <class name="sanity.SauceDemoWeb">
-        <test-method status="PASS" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeClass" is-config="true" duration-ms="7267" started-at="2022-04-05T18:33:47 IDT" finished-at="2022-04-05T18:33:54 IDT">
+    <test name="API Tests" duration-ms="9753" started-at="2022-04-20T10:01:41 IDT" finished-at="2022-04-20T10:01:51 IDT">
+      <class name="sanity.BookAPI">
+        <test-method status="PASS" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sanity.BookAPI@66d23e4a]" name="beforeClass" is-config="true" duration-ms="2058" started-at="2022-04-20T10:01:41 IDT" finished-at="2022-04-20T10:01:43 IDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[web]]>
+                <![CDATA[api]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[./DDTFiles/items.csv]]>
+                <![CDATA[./DDTFiles/books.csv]]>
               </value>
             </param>
             <param index="2">
@@ -28,384 +28,146 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="210" started-at="2022-04-05T18:33:54 IDT" finished-at="2022-04-05T18:33:54 IDT">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.BookAPI@66d23e4a]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2022-04-20T10:01:43 IDT" finished-at="2022-04-20T10:01:43 IDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test01_verifyTitle()]]>
+                <![CDATA[public void sanity.BookAPI.test01_verifyBookTitle()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="1342" started-at="2022-04-05T18:33:55 IDT" finished-at="2022-04-05T18:33:56 IDT">
+        <test-method status="PASS" signature="test01_verifyBookTitle()[pri:0, instance:sanity.BookAPI@66d23e4a]" name="test01_verifyBookTitle" duration-ms="4311" started-at="2022-04-20T10:01:43 IDT" description="Test01 - Verify Book Title Property" finished-at="2022-04-20T10:01:47 IDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test01_verifyTitle()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test01_verifyTitle" duration-ms="264" started-at="2022-04-05T18:33:56 IDT" description="Test01 - Verify Title" finished-at="2022-04-05T18:33:56 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test01_verifyTitle -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="99" started-at="2022-04-05T18:33:56 IDT" finished-at="2022-04-05T18:33:56 IDT">
+        </test-method> <!-- test01_verifyBookTitle -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.BookAPI@66d23e4a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-04-20T10:01:47 IDT" finished-at="2022-04-20T10:01:47 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="22" started-at="2022-04-05T18:33:56 IDT" finished-at="2022-04-05T18:33:56 IDT">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.BookAPI@66d23e4a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-04-20T10:01:47 IDT" finished-at="2022-04-20T10:01:47 IDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test02_verifyItemsNumber()]]>
+                <![CDATA[public void sanity.BookAPI.test02_addNewBook(java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="769" started-at="2022-04-05T18:33:56 IDT" finished-at="2022-04-05T18:33:57 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test02_verifyItemsNumber()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test02_verifyItemsNumber" duration-ms="336" started-at="2022-04-05T18:33:57 IDT" description="Test02 - Verify Items Number" finished-at="2022-04-05T18:33:58 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test02_verifyItemsNumber -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="81" started-at="2022-04-05T18:33:58 IDT" finished-at="2022-04-05T18:33:58 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="26" started-at="2022-04-05T18:33:58 IDT" finished-at="2022-04-05T18:33:58 IDT">
+        <test-method status="PASS" signature="test02_addNewBook(java.lang.String)[pri:0, instance:sanity.BookAPI@66d23e4a]" name="test02_addNewBook" duration-ms="542" started-at="2022-04-20T10:01:47 IDT" description="Test02 - Add a New Book And Verify" data-provider="data-provider" finished-at="2022-04-20T10:01:48 IDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test03_add_and_removeItemsFromInventory()]]>
+                <![CDATA[9781491950296]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02_addNewBook -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.BookAPI@66d23e4a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-04-20T10:01:48 IDT" finished-at="2022-04-20T10:01:48 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.BookAPI@66d23e4a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-04-20T10:01:48 IDT" finished-at="2022-04-20T10:01:48 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.BookAPI.test02_addNewBook(java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="775" started-at="2022-04-05T18:33:58 IDT" finished-at="2022-04-05T18:33:59 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test03_add_and_removeItemsFromInventory()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test03_add_and_removeItemsFromInventory" duration-ms="1660" started-at="2022-04-05T18:33:59 IDT" description="Test03 - Add and Remove Item Testing" finished-at="2022-04-05T18:34:00 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test03_add_and_removeItemsFromInventory -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="98" started-at="2022-04-05T18:34:00 IDT" finished-at="2022-04-05T18:34:00 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="18" started-at="2022-04-05T18:34:00 IDT" finished-at="2022-04-05T18:34:00 IDT">
+        <test-method status="PASS" signature="test02_addNewBook(java.lang.String)[pri:0, instance:sanity.BookAPI@66d23e4a]" name="test02_addNewBook" duration-ms="473" started-at="2022-04-20T10:01:48 IDT" description="Test02 - Add a New Book And Verify" data-provider="data-provider" finished-at="2022-04-20T10:01:49 IDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test04_verify_low_to_high_sortingItems()]]>
+                <![CDATA[9781593275846]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02_addNewBook -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.BookAPI@66d23e4a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-04-20T10:01:49 IDT" finished-at="2022-04-20T10:01:49 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.BookAPI@66d23e4a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-04-20T10:01:49 IDT" finished-at="2022-04-20T10:01:49 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.BookAPI.test02_addNewBook(java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="1123" started-at="2022-04-05T18:34:00 IDT" finished-at="2022-04-05T18:34:02 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test04_verify_low_to_high_sortingItems()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test04_verify_low_to_high_sortingItems" duration-ms="780" started-at="2022-04-05T18:34:02 IDT" description="Test04 - Verify low to high sorting items" finished-at="2022-04-05T18:34:02 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test04_verify_low_to_high_sortingItems -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="64" started-at="2022-04-05T18:34:02 IDT" finished-at="2022-04-05T18:34:03 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2022-04-05T18:34:03 IDT" finished-at="2022-04-05T18:34:03 IDT">
+        <test-method status="PASS" signature="test02_addNewBook(java.lang.String)[pri:0, instance:sanity.BookAPI@66d23e4a]" name="test02_addNewBook" duration-ms="470" started-at="2022-04-20T10:01:49 IDT" description="Test02 - Add a New Book And Verify" data-provider="data-provider" finished-at="2022-04-20T10:01:49 IDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test05_verify_AllElementsDisplay()]]>
+                <![CDATA[9781593277574]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02_addNewBook -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.BookAPI@66d23e4a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-04-20T10:01:49 IDT" finished-at="2022-04-20T10:01:49 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.BookAPI@66d23e4a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-04-20T10:01:49 IDT" finished-at="2022-04-20T10:01:49 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.BookAPI.test03_updateBook()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="743" started-at="2022-04-05T18:34:03 IDT" finished-at="2022-04-05T18:34:03 IDT">
+        <test-method status="PASS" signature="test03_updateBook()[pri:0, instance:sanity.BookAPI@66d23e4a]" name="test03_updateBook" duration-ms="766" started-at="2022-04-20T10:01:49 IDT" description="Test03 - Update a Book And Verify" finished-at="2022-04-20T10:01:50 IDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test05_verify_AllElementsDisplay()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test05_verify_AllElementsDisplay" duration-ms="378" started-at="2022-04-05T18:34:03 IDT" description="Test05 - Verify visibility of items" finished-at="2022-04-05T18:34:04 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test05_verify_AllElementsDisplay -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="81" started-at="2022-04-05T18:34:04 IDT" finished-at="2022-04-05T18:34:04 IDT">
+        </test-method> <!-- test03_updateBook -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.BookAPI@66d23e4a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-04-20T10:01:50 IDT" finished-at="2022-04-20T10:01:50 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2022-04-05T18:34:04 IDT" finished-at="2022-04-05T18:34:04 IDT">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.BookAPI@66d23e4a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-04-20T10:01:50 IDT" finished-at="2022-04-20T10:01:50 IDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test06_verify_visualization_primary_header_logo(java.lang.reflect.Method)]]>
+                <![CDATA[public void sanity.BookAPI.test04_deleteAllUserBooks()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="714" started-at="2022-04-05T18:34:04 IDT" finished-at="2022-04-05T18:34:05 IDT">
+        <test-method status="PASS" signature="test04_deleteAllUserBooks()[pri:0, instance:sanity.BookAPI@66d23e4a]" name="test04_deleteAllUserBooks" duration-ms="752" started-at="2022-04-20T10:01:50 IDT" description="Test04 - Delete All User&#039;s Books And Verify" finished-at="2022-04-20T10:01:51 IDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test06_verify_visualization_primary_header_logo(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test06_verify_visualization_primary_header_logo" duration-ms="1547" started-at="2022-04-05T18:34:05 IDT" description="Test06 - Verify Primary Header Logo" finished-at="2022-04-05T18:34:06 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test06_verify_visualization_primary_header_logo(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test06_verify_visualization_primary_header_logo -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="72" started-at="2022-04-05T18:34:06 IDT" finished-at="2022-04-05T18:34:06 IDT">
+        </test-method> <!-- test04_deleteAllUserBooks -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.BookAPI@66d23e4a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-04-20T10:01:51 IDT" finished-at="2022-04-20T10:01:51 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2022-04-05T18:34:06 IDT" finished-at="2022-04-05T18:34:06 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test07_verify_product_exists_inCart(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="717" started-at="2022-04-05T18:34:06 IDT" finished-at="2022-04-05T18:34:07 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test07_verify_product_exists_inCart(java.lang.String)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test07_verify_product_exists_inCart" duration-ms="482" started-at="2022-04-05T18:34:07 IDT" description="Test07 - Verify Item Exists In Cart" data-provider="data-provider" finished-at="2022-04-05T18:34:08 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sauce Labs Backpack]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test07_verify_product_exists_inCart -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="67" started-at="2022-04-05T18:34:08 IDT" finished-at="2022-04-05T18:34:08 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="24" started-at="2022-04-05T18:34:08 IDT" finished-at="2022-04-05T18:34:08 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test07_verify_product_exists_inCart(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="717" started-at="2022-04-05T18:34:08 IDT" finished-at="2022-04-05T18:34:08 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test07_verify_product_exists_inCart(java.lang.String)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test07_verify_product_exists_inCart" duration-ms="539" started-at="2022-04-05T18:34:08 IDT" description="Test07 - Verify Item Exists In Cart" data-provider="data-provider" finished-at="2022-04-05T18:34:09 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sauce Labs Bike Light]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test07_verify_product_exists_inCart -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="55" started-at="2022-04-05T18:34:09 IDT" finished-at="2022-04-05T18:34:09 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2022-04-05T18:34:09 IDT" finished-at="2022-04-05T18:34:09 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test07_verify_product_exists_inCart(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="677" started-at="2022-04-05T18:34:09 IDT" finished-at="2022-04-05T18:34:10 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test07_verify_product_exists_inCart(java.lang.String)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test07_verify_product_exists_inCart" duration-ms="863" started-at="2022-04-05T18:34:10 IDT" description="Test07 - Verify Item Exists In Cart" data-provider="data-provider" finished-at="2022-04-05T18:34:11 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sauce Labs Bolt T-Shirt]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test07_verify_product_exists_inCart -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="61" started-at="2022-04-05T18:34:11 IDT" finished-at="2022-04-05T18:34:11 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2022-04-05T18:34:11 IDT" finished-at="2022-04-05T18:34:11 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test07_verify_product_exists_inCart(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="758" started-at="2022-04-05T18:34:11 IDT" finished-at="2022-04-05T18:34:12 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test07_verify_product_exists_inCart(java.lang.String)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test07_verify_product_exists_inCart" duration-ms="748" started-at="2022-04-05T18:34:12 IDT" description="Test07 - Verify Item Exists In Cart" data-provider="data-provider" finished-at="2022-04-05T18:34:12 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sauce Labs Fleece Jacket]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test07_verify_product_exists_inCart -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="70" started-at="2022-04-05T18:34:12 IDT" finished-at="2022-04-05T18:34:13 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2022-04-05T18:34:13 IDT" finished-at="2022-04-05T18:34:13 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test07_verify_product_exists_inCart(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="672" started-at="2022-04-05T18:34:13 IDT" finished-at="2022-04-05T18:34:13 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test07_verify_product_exists_inCart(java.lang.String)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test07_verify_product_exists_inCart" duration-ms="866" started-at="2022-04-05T18:34:13 IDT" description="Test07 - Verify Item Exists In Cart" data-provider="data-provider" finished-at="2022-04-05T18:34:14 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sauce Labs Onesie]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test07_verify_product_exists_inCart -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="65" started-at="2022-04-05T18:34:14 IDT" finished-at="2022-04-05T18:34:14 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2022-04-05T18:34:14 IDT" finished-at="2022-04-05T18:34:14 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoWeb.test07_verify_product_exists_inCart(java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="before()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="before" is-config="true" duration-ms="669" started-at="2022-04-05T18:34:14 IDT" finished-at="2022-04-05T18:34:15 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test07_verify_product_exists_inCart(java.lang.String)[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="test07_verify_product_exists_inCart" duration-ms="976" started-at="2022-04-05T18:34:15 IDT" description="Test07 - Verify Item Exists In Cart" data-provider="data-provider" finished-at="2022-04-05T18:34:16 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test.allTheThings() T-Shirt (Red)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test07_verify_product_exists_inCart -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterMethod" is-config="true" duration-ms="73" started-at="2022-04-05T18:34:16 IDT" finished-at="2022-04-05T18:34:16 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:sanity.SauceDemoWeb@52c8295b]" name="afterClass" is-config="true" duration-ms="116" started-at="2022-04-05T18:34:16 IDT" finished-at="2022-04-05T18:34:16 IDT">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:sanity.BookAPI@66d23e4a]" name="afterClass" is-config="true" duration-ms="1" started-at="2022-04-20T10:01:51 IDT" finished-at="2022-04-20T10:01:51 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- sanity.SauceDemoWeb -->
-    </test> <!-- Web Tests -->
-    <test name="Web DB Tests" duration-ms="5887" started-at="2022-04-05T18:34:16 IDT" finished-at="2022-04-05T18:34:22 IDT">
-      <class name="sanity.SauceDemoDB">
-        <test-method status="PASS" signature="beforeClass(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sanity.SauceDemoDB@78e16155]" name="beforeClass" is-config="true" duration-ms="4446" started-at="2022-04-05T18:34:16 IDT" finished-at="2022-04-05T18:34:21 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[web]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DDTFile]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoDB@78e16155]" name="beforeMethod" is-config="true" duration-ms="14" started-at="2022-04-05T18:34:21 IDT" finished-at="2022-04-05T18:34:21 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoDB.test01_verifyTitle()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test01_verifyTitle()[pri:0, instance:sanity.SauceDemoDB@78e16155]" name="test01_verifyTitle" duration-ms="1143" started-at="2022-04-05T18:34:21 IDT" description="Test01 - Login to SauceDemo with DB Credentials" finished-at="2022-04-05T18:34:22 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test01_verifyTitle -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoDB@78e16155]" name="afterMethod" is-config="true" duration-ms="88" started-at="2022-04-05T18:34:22 IDT" finished-at="2022-04-05T18:34:22 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:sanity.SauceDemoDB@78e16155]" name="afterClass" is-config="true" duration-ms="98" started-at="2022-04-05T18:34:22 IDT" finished-at="2022-04-05T18:34:22 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- sanity.SauceDemoDB -->
-    </test> <!-- Web DB Tests -->
-  </suite> <!-- Web Suite -->
+      </class> <!-- sanity.BookAPI -->
+    </test> <!-- API Tests -->
+  </suite> <!-- API Suite -->
 </testng-results>

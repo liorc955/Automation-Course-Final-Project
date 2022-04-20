@@ -35,6 +35,11 @@ public class ApiActions extends CommonOps {
         return jp.getString(path);
     }
 
+    @Step("Get Status Code")
+    public static int getStatusCode(){
+        return response.getStatusCode();
+    }
+
 
 
 }
