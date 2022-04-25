@@ -112,7 +112,7 @@ public class CommonOps extends Base {
       Method Name: initChromeDriver
       Method Description: This method initializes the chrome driver for web testing.
       Method Parameters: void
-      Method Return: void
+      Method Return: WebDriver
       --------------------------------------------------- */
     public static WebDriver initChromeDriver(){
         WebDriverManager.chromedriver().setup();
@@ -124,7 +124,7 @@ public class CommonOps extends Base {
       Method Name: initFireFoxDriver
       Method Description: This method initializes the firefox driver for web testing.
       Method Parameters: void
-      Method Return: void
+      Method Return: WebDriver
       --------------------------------------------------- */
     public static WebDriver initFireFoxDriver(){
         WebDriverManager.firefoxdriver().setup();
@@ -136,7 +136,7 @@ public class CommonOps extends Base {
       Method Name: initIEDriver
       Method Description: This method initializes the IE driver for web testing.
       Method Parameters: void
-      Method Return: void
+      Method Return: WebDriver
       --------------------------------------------------- */
     public static WebDriver initIEDriver(){
         WebDriverManager.iedriver().setup();
