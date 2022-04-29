@@ -11,6 +11,7 @@ import org.json.simple.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -67,8 +68,8 @@ public class CommonOps extends Base {
             driver =  initChromeDriver();
         else if (browserType.equalsIgnoreCase("firefox"))
             driver =  initFireFoxDriver();
-        else if (browserType.equalsIgnoreCase("ie"))
-            driver =  initIEDriver();
+        else if (browserType.equalsIgnoreCase("edge"))
+            driver =  initEdgeDriver();
         else{
             throw new RuntimeException("Invalid platform name");
         }
@@ -133,14 +134,14 @@ public class CommonOps extends Base {
     }
 
     /* ---------------------------------------------------
-      Method Name: initIEDriver
-      Method Description: This method initializes the IE driver for web testing.
+      Method Name: initEdgeDriver
+      Method Description: This method initializes the Edge driver for web testing.
       Method Parameters: void
       Method Return: WebDriver
       --------------------------------------------------- */
-    public static WebDriver initIEDriver(){
-        WebDriverManager.iedriver().setup();
-        WebDriver driver = new InternetExplorerDriver();
+    public static WebDriver initEdgeDriver(){
+        WebDriverManager.edgedriver().setup();
+        WebDriver driver = new EdgeDriver();
         return driver;
     }
 
@@ -209,16 +210,19 @@ public class CommonOps extends Base {
           - The platform testing type: web, mobile, api, electron and desktop
           - The soft assertion object for testng assertions and screen object for recording tests
           - Call to ManageDB.openConnection() method to connect to the DB for testing with DB data
-          Method Parameters: String PlatformName, String DDTFile, String EnableDB - from testng xml files
+          Method Parameters: String PlatformName, String DDTFile, String EnableDB, String Browser - from testng xml files
           Method Return: void
           --------------------------------------------------- */
     @BeforeClass
-    @Parameters({ "PlatformName", "DDTFile", "EnableDB" })
-    public void beforeClass(String PlatformName,@Optional("DDTFile") String DDTFile,@Optional("EnableDB") String EnableDB) {
+    @Parameters({ "PlatformName", "DDTFile", "EnableDB", "Browser" })
+    public void beforeClass(String PlatformName,
+                            @Optional("DDTFile") String DDTFile,
+                            @Optional("EnableDB") String EnableDB,
+                            @Optional("Browser") String Browser) {
         platform = PlatformName;
         ddtFilePath = DDTFile;
         usingDB = Boolean.parseBoolean(EnableDB);
-        if (PlatformName.equalsIgnoreCase("web")) initBrowser(getData("BrowserName"));
+        if (PlatformName.equalsIgnoreCase("web")) initBrowser(Browser);
         else if (PlatformName.equalsIgnoreCase("mobile")) initMobile();
         else if (PlatformName.equalsIgnoreCase("api")) initAPI();
         else if (PlatformName.equalsIgnoreCase("electron")) initElectron();
