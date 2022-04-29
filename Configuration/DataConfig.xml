@@ -10,7 +10,6 @@
 
 
     <!-- Web Config -->
-    <BrowserName>chrome</BrowserName>
     <urlWeb>https://www.saucedemo.com/</urlWeb>
     <ImageRepo>\ImageRepository\</ImageRepo>
 
