@@ -1,7 +1,7 @@
 
 # Full Stack Test Automation Course - Final Project
 
-This project is the final project I build during my study in a Full Stack Test Automation Course.
+This project is the final project I built during my study in a Full Stack Test Automation Course.
 In this project, I build a generic automation framework that supports various platforms.
 
 
