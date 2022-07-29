@@ -11,7 +11,11 @@
     </test> <!-- Test -->
     <test name="Web DB Tests">
         <classes>
-            <class name="sanity.SauceDemoDB"/>
+            <class name="sanity.SauceDemoDB">
+                <methods>
+                    <exclude name="test01_verifyTitle" />
+                </methods>
+            </class>
             <parameter name="EnableDB" value="true"></parameter>
         </classes>
     </test> <!-- Test -->
